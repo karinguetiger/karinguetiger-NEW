@@ -1157,15 +1157,30 @@ footer nav a {
   font-size: 1.1rem;
 }
 
+.header-number {
+  font-size: 0.8rem;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.header-baum {
+  width: 10rem;
+}
+
 .mobile-menu a {
-  font-size: 1.1rem;
-  font-family: 'poppins', sans-serif;
+  font-size: 1.9rem;
+  font-family: "Kaisei HarunoUmi", serif;
   font-weight: 200;
   text-decoration: none;
   color: inherit;
   padding: 0.2rem;
-  display: block;
+  display: inline-block;
   letter-spacing: 0.03em;
+}
+
+.header-link {
+  z-index: 21;
 }
 
 .mobile-header-logo {
