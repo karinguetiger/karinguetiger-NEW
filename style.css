@@ -133,6 +133,12 @@ section {
   min-height: 40vh;
 }
 
+
+.margin-l-c1 {
+  margin-left: 5rem;
+  margin-right: -10rem;
+}
+
 /* Padding Utility Classes */
 .padded-sm {
   padding: 2.5%;
@@ -391,6 +397,11 @@ section {
 
 .window {
   border-radius: 2rem
+} 
+
+.index-card-img {
+  border: 1px solid var(--dark-text);
+  border-radius: 1.5rem;
 }
 
 .bg-image {
@@ -861,6 +872,19 @@ right: 0;
 bottom: 0;
 left: -0.5rem;
   z-index: -3;
+}
+
+.pa3 {
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  bottom: 0;
+  left: -1rem;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--dark-text);
+  border-radius: 1.5rem;
 }
 
 /* ------------ Header & Hamburger Menu -------------- */
