@@ -49,6 +49,7 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   /* Prevent font scaling in landscape while allowing user zoom */
+  overflow-x: hidden;
 }
 
 
@@ -135,6 +136,12 @@ section {
 
 .flex-flip-normal {
   flex-flow:row-reverse wrap;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .margin-l-c1 {
@@ -416,6 +423,10 @@ section {
   background-repeat: no-repeat;
 }
 
+.bg-footer-bottom {
+  background-image: url('/images/neu/index/footer-banner.jpg');
+}
+
 .bg-behandlungen {
   background-image: url('/images/behandlungen/behandlungen-banner.jpg');
 }
@@ -501,7 +512,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -585,6 +596,7 @@ body {
   /* Add your font here */
   color: var(--dark-text);
   background-color: var(--v-light);
+  overflow-x: hidden;
 }
 
 h2,
@@ -792,6 +804,24 @@ p a:hover {
   font-size: 1.5rem;
 }
 
+.button-footer {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  line-height: 1;
+  padding: 1rem 1.5rem;
+  border: 1px solid;
+  font-family: 'Kaisei HarunoUmi', serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  background-color: white;
+}
+
+.button-footer:hover {
+  background-color: var(--dark-text);
+  color: white;
+}
+
 .button-white {
   color: white;
   display: inline-block;
@@ -888,6 +918,18 @@ left: -0.5rem;
   height: 100%;
   border: 1px solid var(--dark-text);
   border-radius: 1.5rem;
+}
+
+.pa4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  width: 7rem;
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid var(--dark-text);
+  padding: 1rem;
 }
 
 /* ------------ Header & Hamburger Menu -------------- */
