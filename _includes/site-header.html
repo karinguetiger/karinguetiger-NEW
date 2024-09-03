@@ -20,31 +20,15 @@
 
 </header>
   
-<div class="mobile-menu"> 
-  <a href="/index"> <img src="/images/logos/logo.png" class="header-logo-mobile"> </a>
-  <div class="menu-button-position-mobile">
-    <span class="menu-button menu-button-mobile"> SCHLIESSEN </span>
-  </div>
-  <nav class="mobile-menu-links"> 
-    <a href="/index"> Start </a>
-    <a href="/ueber-mich"> Über mich </a>
-    <a href="/awake-your-soul.html"> Awake your Soul </a>
-    <a href="/behandlungen"> Behandlungen </a>
-    <div class="dropdown-content-mobile">
-      {% for item in site.data.navigation.dropdown %}
-
-      <a href="{{ item.link }}" {% if item.link == page.url %}class="active"{% endif %}> {{ item.name }} </a>
-
-      {% endfor %}
+<div class="mobile-menu bg-image bg-menu grid-spaceAround-middle"> 
+  <div class="col-12-top relative grid">
+    <div class="col-6 relative">
+      <a href="/index"> <img src="/images/logos/logo.png" class="header-logo-mobile"> </a>
     </div>
-    <!-- <a href="/familienmediation"> Familienmediation </a> -->
-    <a href="/coaching.html"> Coaching </a>
-    <a href="/thetahealing-und-kurse.html"> ThetaHealing® & Kurse </a>
-    <!-- <a href="/exklusives-mallorca-retreat-2024.html"> Retreats </a> -->
-    <a href="/kalender"> Eventkalender </a>
-    <a href="/termin-buchen"> Termin buchen </a>
-    <a href="/kontakt"> Kontakt </a>
-  </nav>
+    <div class="col-6 relative">
+      <span class="menu-button schliessen"> SCHLIESSEN </span>
+    </div>
+  </div>
 </div> 
 
 

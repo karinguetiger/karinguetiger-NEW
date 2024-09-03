@@ -423,6 +423,10 @@ section {
   background-repeat: no-repeat;
 }
 
+.bg-menu {
+  background-image:  url('/images/neu/menu/menu-bg.jpg');
+}
+
 .bg-footer-bottom {
   background-image: url('/images/neu/index/footer-banner.jpg');
 }
@@ -953,7 +957,7 @@ left: -0.5rem;
   position: absolute;
   top: 1.9rem;
   left: 1.5rem;
-  max-width: 7rem;
+  max-width: 16rem;
 }
 
 .header-logo {
@@ -1104,6 +1108,14 @@ footer nav a {
   font-weight: 100;
 }
 
+.schliessen {
+  font-size: 1.9rem;
+  letter-spacing: 3px;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
 .menu-button-mobile {
   font-size: 1.3rem;
 }
@@ -1117,9 +1129,8 @@ footer nav a {
 
 .mobile-menu {
   background-color: var(--light);
-  padding: 2% 5% 5% 5%;
   position: fixed;
-  z-index: 3;
+  z-index: 20;
   top: -100%;
   right: 0;
   left: 0;
@@ -1129,6 +1140,7 @@ footer nav a {
   color: var(--dark-text);
   max-height: 100vh;
   overflow: scroll;
+  min-width: 100vw;
 }
 
 .mobile-menu.active {
