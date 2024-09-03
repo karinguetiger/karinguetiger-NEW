@@ -14,7 +14,7 @@ seo:
 kurse:
   - titel: ChakraFlow – Weibliche Energieheilung
     untertitel: Energie & Körpersysteme – Deine 7-wöchige Reise zur weiblichen Balance
-    einleitung: >-
+    description_html: >-
       In meinem 7-wöchigen Programm begleite ich dich auf einer Reise, die dich
       mit deiner weiblichen Energie verbindet und sowohl deine emotionale als
       auch körperliche Balance stärkt. Jedes Chakra steht in enger Verbindung zu
@@ -74,7 +74,8 @@ kurse:
     start: >-
       Start - Dienstag, 1. Oktober 2024, von 9 Uhr bis ca. 11 Uhr (Ratenzahlung
       möglich).
-    description_html_1: Diese Reise ist mehr als nur eine energetische Heilung. Sie ist eine Einladung, deine Kraft zurückzuerobern und eine tiefgreifende Harmonisierung deiner Körpersysteme zu erfahren. Jedes Chakra ist eng mit deinem physischen Körper verbunden, und durch diese Verbindungen kannst du Heilung und Erneuerung auf allen Ebenen erleben. <br> Ich freue mich, dich auf diesem Weg zu begleiten.
+    abschluss:
+      - description_html: Diese Reise ist mehr als nur eine energetische Heilung. Sie ist eine Einladung, deine Kraft zurückzuerobern und eine tiefgreifende Harmonisierung deiner Körpersysteme zu erfahren. Jedes Chakra ist eng mit deinem physischen Körper verbunden, und durch diese Verbindungen kannst du Heilung und Erneuerung auf allen Ebenen erleben. <br> Ich freue mich, dich auf diesem Weg zu begleiten.
 ---
 <section class="padded padded-t-0 center capped-width grid-spaceAround-middle">
     <div class="col-5 relative">
@@ -111,7 +112,7 @@ kurse:
             <br />
             <h2> {{ kurs.untertitel }} </h2>
             <br />
-            <p> {{ kurs.einleitung }} </p>
+            <p> {{ kurs.description_html }} </p>
         </div>
         {% for section in kurs.sections %}
         <div class="grid-spaceAround-middle flex-flip padded-t-2">
@@ -129,7 +130,9 @@ kurse:
             <p> {{ kurs.start }} </p>
         </div>
         <div class="margin-t-2 center">
-            {{ kurs.description_html_1 }}
+            {% for abschluss in kurs.abschluss }
+                {{ abschluss.description_html }}
+            {% endfor %}
             <br><br>
             <a href="/kontakt.html" class="button"> Jetzt anmelden </a>
         </div>
