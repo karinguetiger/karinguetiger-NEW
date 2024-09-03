@@ -3,18 +3,7 @@
 
 /* ----------- CSS RESET --------- */
 
-@font-face{
-  font-family: "Heather Frontis";
-  src: url("/fonts/056e6a6085cf562f194df6c627a5b0ff.eot");
-  src: url("/fonts/056e6a6085cf562f194df6c627a5b0ff.eot?#iefix")format("embedded-opentype"),
-      url("/fonts/056e6a6085cf562f194df6c627a5b0ff.woff")format("woff"),
-      url("/fonts/056e6a6085cf562f194df6c627a5b0ff.woff2")format("woff2"),
-      url("/fonts/056e6a6085cf562f194df6c627a5b0ff.ttf")format("truetype"),
-      url("/fonts/056e6a6085cf562f194df6c627a5b0ff.svg#Heather Frontis Frontis")format("svg");
-  font-weight:normal;
-  font-style:normal;
-  font-display:swap;
-}
+@import url('https://fonts.cdnfonts.com/css/heather-frontis');
 
 @font-face {
   font-family: "Ghost Theory";
