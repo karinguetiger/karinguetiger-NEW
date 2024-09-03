@@ -181,6 +181,10 @@ section {
   padding-right: 1rem;
 }
 
+.margin-t-c1 {
+  margin-top: -2rem;
+}
+
 .padded-t {
   padding-top: 5%;
 }
@@ -1523,6 +1527,7 @@ hr.short.center {
   .sm-padded {
     padding: 5%;
   }
+
 
   .sm-padded-1 {
     padding: 1rem;
