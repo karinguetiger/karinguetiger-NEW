@@ -1,0 +1,172 @@
+---
+layout: default
+title: Karin Gütiger Awaken Soul
+font-awesome: true
+seo:
+  title: Karin Gütiger Awaken Soul
+  description: >-
+    Wahrheit sprechen, Herzöffnung, Cham, Zug, Persönlichkeitsentwicklung,
+    Wachstum
+  social_image:
+  twitter_card:
+  keywords: Theta Healing, Familienmediation, Cham, Zug, Karin Gütiger, Thetasoul
+  hide-from-google: false
+---
+<section>
+  <section class="capped-width xs-center grid-spaceAround-middle flex-flip">
+    <div class="col-6_xs-10 padded">
+      <img data-src="/images/index/index-1.jpg" class="lazy window" />
+    </div>
+    <div class="col-6_xs-12 padded editable">
+        <h3><strong>Willkommen in deinem heiligen Raum</strong></h3>
+        <p>Fühlst du dich manchmal von dir selbst entfremdet, als ob deine Worte und Gefühle nicht mehr zu dem passen, was du tief in dir empfindest? Vielleicht hast du nach einem erlebten Missbrauch das Gefühl, nicht mehr wirklich gehört und gesehen zu werden, und suchst nach einem Weg, wieder zu dir selbst zu finden.</p>
+        <p>In einem geschützten und liebevollen Umfeld lade ich dich ein, den Kontakt zu dir selbst wieder aufzunehmen. Hier findest du die Ruhe, Klarheit und Geborgenheit, die du brauchst, um deine eigene Stimme wieder zu entdecken und dich vollständig wahrzunehmen – trotz der schweren Erfahrungen, die du gemacht hast.</p>
+        <p>Dieser Raum ist für dich da, damit du dich sicher und verstanden fühlen kannst, während du dich wieder als die Person erkennst, die du wirklich bist. Gemeinsam können wir daran arbeiten, dass du dich nicht mehr als Opfer fühlst, sondern deine innere Stärke wiederfindest.</p>
+        <p>Ich freue mich darauf, dich auf diesem Weg zu begleiten.</p>
+        <p>Mit herzlichen Grüssen,</p>
+        <p>Karin Gütiger</p>
+    </div>
+  </section>
+</section>
+
+<section class="capped-width padded padded-t-0 xs-padded-b-2">
+  <div class="editable center">
+      <h3><strong>Bist du bereit in deinen heiligen Raum einzutreten?</strong></h3><a href="/termin-buchen.html" class="cta-button"> Jetzt buchen </a>
+  </div>
+</section>
+
+<section class="bg-medium center jp">
+  <section class="padded capped-width-narrow relative">
+    <div class="apo-left hide-xs"> „ </div>
+    <div class="col-10">
+      <p class="quote editable">
+          Veränderung beginnt nicht mit grossen Taten, sondern mit der Entscheidung, dass es Zeit ist, etwas Neues zu wagen.
+      </p>
+    </div>
+    <div class="apo-right hide-xs"> „ </div>
+    <p class="author right editable padded-t-05 xs-center">
+        - unbekannt
+    </p>
+  </section>
+</section>
+
+
+
+<section class="center padded mob-padded-0 dark-text capped-width">
+
+  <div class="grid horizontal-scroll">
+
+    <div class="col-4_xs-11 padded-05">
+
+      <!--- First Card --->
+      <a href="/behandlungen.html" class="card-link lazy">
+        <div class="card bg-rose">
+          <h3> Behandlungen </h3>
+          <h4 class="hide-sm"> Anwendungen  </h4>
+          <img data-src="/images/index/card-1.png" class="card-image lazy" />
+        </div>
+      </a>
+    </div>
+    <div class="col-4_xs-11 padded-05">
+
+      <!--- Second Card --->
+      <a href="/coaching.html" class="card-link lazy">
+        <div class="card bg-gold">
+          <h3> Coaching </h3>
+          <h4 class="hide-sm"> Entdecke dich selbst</h4>
+          <img data-src="/images/index/coaching-neu.jpg" class="card-image lazy" />
+        </div>
+      </a>
+    </div>
+
+    <div class="col-4_xs-11 padded-05">
+
+      <!--- Third Card --->
+      <a href="/thetahealing-und-kurse.html" class="card-link">
+        <div class="card bg-green">
+          <h3> Seminare & Kurse </h3>
+          <h4 class="hide-sm"> ThetaHealing® <span class="hide-sm"> & mehr </span></h4>
+          <img src="/images/index/Seminare-und-kurse.jpg" class="card-image" />
+        </div>
+      </a>
+    </div>
+
+    <!-- <div class="col-6_xs-11 padded-05"> -->
+
+      <!--- Fourth Card --->
+      <!-- <a href="/exklusives-mallorca-retreat-2024.html" class="card-link">
+        <div class="card bg-fourth">
+          <h3> Retreats </h3>
+          <h4 class="hide-sm"> Mallorca <span class="hide-sm"> </span></h4>
+          <img src="/images/index/card-4.jpg" class="card-image" />
+        </div>
+      </a>
+    </div> -->
+
+
+  </div>
+</section>
+
+
+
+
+<section class="bg-v-light">
+  <section class="capped-width grid-spaceAround-middle center padded">
+    <div class="col-12 margin-b-2">
+      <h2> Aktuelles </h2>
+    </div>
+
+    {% for event in site.data.events.events limit:3 %}
+
+    <div class="col-4_xs-12 padded-1 xs-padded-05">
+      <p> {{ event.datum }} </p>
+    </div>
+
+    <div class="col-4_xs-12 padded-1 xs-padded-05">
+      <p class="margin-b-02 event-title"> {{ event.title }} </p>
+      <p> {{ event.subtitle }} </p>
+      <a href="{{ event.url }}"> mehr Info </a>
+    </div>
+
+    <div class="col-4_xs-12 padded-1">
+      <a href="{{event.anmelden}}" target="_blank"> anmelden </a>
+    </div>
+
+    <div class="col-12">
+      <hr class="center short" />
+    </div>
+
+
+    {% endfor %}
+
+    <div class="col-12-middle">
+      <a href="/kalender.html" class="button margin-t-2 xs-margin-t-1"> Eventkalender </a>
+    </div>
+
+  </section>
+</section>
+
+
+<section class="capped-width grid-spaceAround-middle center">
+
+  <div class="col-6_xs-12 padded editable">
+      <h2>Über mich</h2>
+      <p>Mein Lebensweg ist wie eine faszinierende Reise mit zahlreichen Abzweigungen, und doch haben mich all diese verschiedenen Routen letztendlich zu meinem Herzensweg geführt. Rückblickend würde ich genau dieselben Pfade erneut wählen. Jeder Abschnitt entlang meiner Reise hat mir wertvolle Lektionen und einzigartige Erfahrungen geschenkt, die mich geprägt und bereichert haben. Die Vielfalt der Wege, die ich gegangen bin, hat mein Verständnis erweitert und meine Perspektive vertieft. Nun freue ich mich gespannt darauf, all das zu entdecken, was noch auf meiner Reise des Lebens auf mich wartet.</p>
+      <p><a class="button" href="/ueber-mich.html">Erfahre mehr </a></p>
+  </div>
+
+  <div class="col-6-xs-9 padded">
+    <img data-src="/images/index/index-um-2.png" class="lazy" />
+  </div>
+
+</section>
+
+
+
+<section class="bg-dark center">
+  <section class="padded capped-width-v-narrow white-text">
+    <div class="newsletter">
+      <div class="ml-embedded" data-form="KSbap2"></div>
+    </div>
+  </section>
+</section>

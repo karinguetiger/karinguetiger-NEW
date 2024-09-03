@@ -1,0 +1,60 @@
+---
+layout: default
+title: Eventkalender ThetaSoul by Karin Gütiger
+font-awesome: true
+seo:
+  title: Eventkalender | ThetaHealing® Seminare
+  description: >-
+    Der Eventkalender beinhaltet alle Seminare, Übungstage, Übungsmorgen,
+    Übungsabende, Wohlfühlabende, Informationstage- oder abende.
+  social_image:
+  twitter_card:
+  keywords: Theta Healing, Mediation, Zug, Cham, Karin Gütiger, Thetasoul, Eventkalender
+  hide-from-google: false
+---
+<section>
+    <section class="capped-width padded center">
+        <h2> Eventkalender </h2>
+    </section>
+</section>
+
+<section>
+{% for event in site.data.events.events %}
+
+<section class="kalender-section bg-v-light">
+    <section class="capped-width-narrow text-white padded padded-b-2 padded-t-2 grid-middle-spaceBetween">
+        <div class="col-7">
+            <p class="editable margin-b-05"> {{event.theme}} </p>
+            <h2 class="editable"> {{event.title}} </h2>
+            <h3 class="emphasis editable"> {{event.datum}} </h3>
+            <p class="editable margin-b-0"> {{event.zeit1}} </p>
+            <p class="editable margin-b-0"> {{event.zeit2}} </p>
+            <p class="editable margin-b-0"> {{event.zeit3}} </p>
+        </div>
+        <div class="col-3_xs-4">
+            <a href="{{event.url}}"> <img src="{{event.image}}" class="kalender-icon" /> </a>
+        </div>
+        <div class="col-12-center-middle center padded-1 padded-b-0">
+            <a href="{{event.anmelden}}" class="anmelde-button-kalender" target="_blank"> Anmelden </a>
+        </div>
+    </section>
+</section>
+
+{% endfor %}
+
+</section>
+
+
+<section class="capped-width-narrow padded center">
+    <p class="editable emphasis margin-b-2">
+        Interessierst du dich für ein anderes Seminar oder einen anderen Termin? Kontaktiere mich gerne.
+    </p>
+    <a href="/kontakt.html" class="button"> Kontakt </a>
+</section>
+
+
+<section class="bg-dark">
+    <section class="capped-width padded center white-text">
+        <a href="/seminare.html" class="button-light-big editable"> Mehr Erfahren über Seminare & Retreats </a>
+    </section>
+</section>

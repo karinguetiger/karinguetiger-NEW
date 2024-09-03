@@ -1,0 +1,117 @@
+---
+layout: default
+title: ThetaHealing® Seminare
+font-awesome: true
+seo:
+  title: ThetaHealing® Seminare
+  description: "Die Grundausbildung im Theta Healing®, Basis DNA, Aufbau DNA und Grabe tiefer geben ein gutes Fundament, um mit sich oder anderen Menschen zu arbeiten.\_ Es sind sehr praxisbezogene Seminare (wie auch die Aufbauseminare).\n\nDie Aufbauseminare gehen dann in die Vertiefung einzelner Themen und unterstützen u.a. auch dabei das eigene Bewusstsein noch mehr zu stärken und Theta Healing® immer mehr im Leben einzubauen."
+  social_image:
+  twitter_card:
+  keywords: Theta Healing, Seminar, Cham, Zug, Karin Gütiger, Thetasoul
+  hide-from-google: false
+section:
+  - image: images/index/card-3.png
+    description_html: >-
+      <p>Die Grundausbildung im Theta Healing® mit den Modulen Basis DNA, Aufbau
+      DNA und Grabe tiefer, legt ein solides Fundament und eröffnet eine
+      aufregende Reise zur persönlichen und zwischenmenschlichen
+      Transformation.</p><p>Diese Seminare zeichnen sich durch ihre hohe
+      Praxisorientierung aus, und die darauf aufbauenden Seminare vertiefen
+      diese Praxis, öffnen neue Türen zu faszinierenden Erkenntnissen.</p><p>In
+      den Aufbauseminaren tauchen wir tiefer in spezifische Themen ein, wobei
+      die Methoden des Theta Healing® verfeinert wird und der Fokus auf die
+      Stärkung des eigenen Bewusstseins gelegt wird. Hier geht es nicht nur um
+      Wissen, sondern auch um das persönliche Erleben und Anwenden.</p><p>Das
+      Ziel ist es, Theta Healing® als Technik zu verstehen und es zu einem
+      integralen Bestandteil unseres Lebens zu machen. Die Seminare bieten eine
+      Plattform für das Erlernen von Fähigkeiten und sind auch ein Raum der
+      Selbstentdeckung.</p><p>Sie unterstützen nicht nur dabei, mit anderen zu
+      arbeiten, sondern auch mit sich selbst in tiefere Verbindung zu treten. In
+      dieser Reise der Bewusstseinserweiterung ist Platz für persönliches
+      Wachstum, tiefe Einsichten und natürlich auch für eine Prise Humor, denn
+      die Reise zu einem höheren Bewusstsein sollte auch Freude und Leichtigkeit
+      beinhalten.</p><p><strong>Du möchtest das Seminar lieber exklusiv im 1:1
+      mit mir halten? Dann melde dich gerne bei mir.</strong></p><p></p><p></p>
+seminare:
+  - title: Basis DNA
+    image: /icons/basic.png
+    link: /basis-dna.html
+  - title: Aufbau DNA
+    image: /icons/advanced.png
+    link: /aufbau-dna.html
+  - title: Grabe Tiefer
+    image: /icons/dig-deeper.png
+    link: /grabe-tiefer.html
+  - title: Du & Gott
+    image: /icons/du-und-gott.png
+    link: /du-und-gott.html
+  - title: Du & dein innerer Kreis
+    image: /icons/growing-your-relationship-3-you-and-your-inner-circle.png
+    link: /du-und-dein-innerer-kreis.html
+  - title: Entwickle deine Beziehung
+    image: /icons/growing-your-relationship-1-you-and-your-significant-others.png
+    link: /entwickle-deine-beziehung.html
+  - title: Intuitive Anatomie
+    image: /icons/intuitive-anatomy.png
+    link: /intuitive-anatomie.html
+  - title: Weltenbeziehungen
+    image: /icons/world-relations.png
+    link: /weltenbeziehungen.html
+  - title: Manifestieren & Überfluss
+    image: /icons/manifesting.png
+    link: /manifestieren-und-ueberfluss.html
+  - title: Pflanzen
+    image: /icons/plant.png
+    link: /pflanzen.html
+  - title: Tiere
+    image: /icons/animal.png
+    link: /tiere.html
+  - title: Seelenpartner
+    image: /icons/soul-mate.png
+    link: /seelenpartner.html
+  - title: Rhythm
+    image: /icons/rhythm.png
+    link: /rhythm.html
+  - title: Regenbogenkinder
+    image: /icons/rainbow.jpg
+    link: /regenbogenkinder.html
+  - title: Du & die Erde
+    image: /icons/growing-your-relationship-4-you-and-the-earth.png
+    link: /thetahealing-du-die-erde-seminar.html
+---
+<section>
+    <section class="capped-width padded padded-b-0 center">
+      <div class="editable">
+          <h1>Theta Healing® Seminare&nbsp;</h1>
+          <p>Online (ausser Du&amp;die Erde) oder Vorort&nbsp;</p>
+      </div>
+    </section>
+</section>
+
+{% for section in page.section %}
+<section class="capped-width padded grid-spaceAround-middle section-flex-flip">
+    <div class="col-6_xs-10">
+        <p> {{ section.description_html }} </p>
+    </div>
+    <div class="col-4_xs-7 xs-margin-t-2">
+        <img data-src="/{{ section.image }}" class="window lazy" />
+    </div>
+</section>
+{% endfor %}
+
+
+<!--------------------- Seminarübersicht -------------------------->
+<section class="bg-medium padded">
+    <section class="bg-white capped-width ">
+
+        
+
+        <section class="padded-1 capped-width-narrow grid-spaceAround-middle">
+
+            {% for seminare in page.seminare %}
+            <div class="col-3_sm-4_xs-10 seminar-icon-h"> <a href="{{seminare.link}}" class="seminare"> <img src="{{seminare.image}}" class="seminar-icon" /> <h3 class="seminar-titel">{{seminare.title}}</h3> </a> </div>
+            {% endfor %}
+
+    </section>
+</section>
+</section>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% include head.html %}
+    
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11279802800"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11279802800');
+</script>
+
+<body>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S2H59L9"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+    {% include inline-styles.html %}
+    
+    {% include site-header.html %}
+
+    <section class="bg-light padded-1 show-md">  </section>
+
+    {% for seminar in page.seminar %}
+
+    <section class="capped-width-v-narrow grid-spaceAround-middle center padded padded-b-0">
+        <div class="col-6_xs-12">
+            <img data-src="{{ seminar.image }}" class="seminar-img lazy">
+        </div>
+        <div class="col-6_xs-12">
+            <h2 class="seminar-titel-2"> ThetaHealing® </h2>
+            <h2 class="xs-padded-b-1"> {{ seminar.titel }} </h2>
+        </div>
+    </section>
+
+
+
+    {% endfor %}
+
+    {{content}}
+
+    {% for seminar in page.seminar %}
+
+    <section class="capped-width-v-narrow padded padded-t-0">
+        <p> Voraussetzungen: {{ seminar.voraussetzungen }}</p>
+        <p> Ort: {{ site.data.site-settings.ort.adresse }} </p>
+    </section>
+
+    {% endfor %}
+
+    <section class="bg-medium">
+        <section class="capped-width-v-narrow padded-2 center">
+            <a href="/kalender.html" class="button hover-white"> Eventkalender </a>
+        </section>
+    </section>
+
+    {% include site-footer.html %}
+
+    <!-- Javascript  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+seo:
+  site_name: Karin Gütiger Awaken Soul
+  title: Karin Gütiger Awaken Soul
+  description:
+  keywords:
+  social_image: /uploads/pajuramacopyright-18.jpg
+  author:
+  favicon_image:
+social:
+  instagram_url: https://www.instagram.com/karinguetiger.ch_mentorin
+  facebook_url: https://www.facebook.com/profile.php?id=100086212285586
+  telefon: 41766505298
+  whatsapp_url: https://wa.me/41766505298
+  email: info@karinguetiger.ch
+design:
+  dark-text_color: '#2e2e2e'
+  medium-text_color: '#5a5a5f'
+  light-text_color: '#f7f5f3'
+  featured-text_color: '#ff0000'
+  dark_color: '#cbae6b'
+  medium_color: '#e3bd63'
+  light_color: '#f0e9d8'
+  v-light_color: '#efd69c'
+  featured_color: '#6495ed'
+  accent_color: '#a74a4a'
+  accent_colors: '#ffffff'
+ort:
+  adresse: Dorfgässli 12, 6331 Hünenberg

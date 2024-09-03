@@ -1,0 +1,59 @@
+events:
+  - title: ''
+    theme: >-
+      Interessierst du dich für ein anderes Seminar oder einen anderen Termin?
+      Kontaktiere mich gerne.
+    datum: ''
+    zeit1: ''
+    zeit2: ''
+    zeit3:
+    image: ''
+    url: ''
+    anmelden: ''
+  - title: Du & die Schöpfung
+    theme: Theta Healing®
+    datum: 12.-13. September 2024
+    zeit1: 09.00 Uhr - ca. 15.30 Uhr
+    zeit2: ''
+    zeit3:
+    image: /icons/seminare-rund/Du-und-gott.png
+    url: /du-und-gott.html
+    anmelden: https://buy.stripe.com/aEU29PaSW9e1cbm006
+  - title: 'Basis DNA '
+    theme: Theta Healing®
+    datum: 17. - 19. September 2024
+    zeit1: 'Di/Do: 13.00- ca. 19.00 Uhr - Mi: 09.00 Uhr - ca. 15.00 Uhr'
+    zeit2: ''
+    zeit3:
+    image: /icons/seminare-rund/basic.png
+    url: https://karinguetiger.ch/basis-dna
+    anmelden: https://buy.stripe.com/cN201H0eicqd2AM8wy
+  - title: 'Aufbau DNA '
+    theme: Theta Healing®
+    datum: 24. - 26. September 2024
+    zeit1: 09.00 Uhr - ca. 15.30 Uhr
+    zeit2: ''
+    zeit3:
+    image: /icons/seminare-rund/advanced.png
+    url: /aufbau-dna.html
+    anmelden: https://buy.stripe.com/fZe6q5bX061P8Za9AE
+  - title: ChakraFlow
+    theme: Weibliche Energieheilung über 7 Wochen
+    datum: 'Start: 1. Oktober 2024, 09.00-11.00 Uhr'
+    zeit1: 'Investition in dich: CHF 777.00'
+    zeit2: >-
+      Kontaktiere mich gerne für ein Infogespräch oder falls du eine Rechnung
+      wünscht.
+    zeit3:
+    image: /images/behandlungen/eb-6.jpg
+    url: /awake-your-soul.html
+    anmelden: https://buy.stripe.com/14k6q5d140Hvdfq28l
+  - title: Grabe tiefer
+    theme: Theta Healing®
+    datum: 1. - 2.  Oktober 2024
+    zeit1: 'Di: 13.00 - ca. 19.00 Uhr / Mi: 09.00 Uhr - ca. 15.00 Uhr'
+    zeit2: ''
+    zeit3:
+    image: /icons/seminare-rund/dig-deeper.png
+    url: /rhythm.html
+    anmelden: https://buy.stripe.com/9AQ9Ch6CG89Xfny4gn

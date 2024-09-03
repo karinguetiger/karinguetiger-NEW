@@ -1,0 +1,50 @@
+---
+layout: default
+title: Kontaktformular
+font-awesome: true
+seo:
+  title: Kontakt ThetaSoul by Karin Gütiger
+  description: Kontaktiere mich bei jeglichen Fragen und Anliegen.
+  social_image:
+  twitter_card:
+  keywords: ThetaSoul by Karin Gütiger, Kontaktformular
+  hide-from-google: false
+---
+<section class="padded">
+  <section class="capped-width-v-narrow">
+    <div class="center editable">
+        <h2 class="margin-b-2">Kontaktiere mich</h2>
+    </div>
+  <form class="margin-t-2" action="https://formspree.io/f/mdovzabz" method="POST">
+      <label for="_name"> Name </label>
+      <input type="text" name="_name" id="_name" />
+ 
+      <label for="_replyto"> Email </label>
+      <input type="email" name="_replyto" id="_replyto" />
+
+      <label for="phone"> Telefonnummer </label>
+      <input type="tel" id="phone" name="phone" pattern="+[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" /> 
+
+      <label for="_seminar"> Behandlung </label>
+      <select name="_seminar" id="_seminar">
+          <option value="" disabled selected hidden> Option auswählen </option>
+          <option> Erstgespräch (kostenfrei) 30 Min. </option>
+          <option> Aurora Femina </option>
+          <option> Inner Balance </option>
+          <option> Aurora </option>
+          <option> ThetaHealing®-Seminar </option>
+      </select>
+
+      <label for="seminar"> ThetaHealing®-Seminar Titel & Datum:</label>
+      <input type="seminar" name="seminar" id="seminar" />
+ 
+      <label for="message"> Nachricht </label>
+      <textarea name="message" id="message"></textarea>
+ 
+      <button type="submit" class="button"> Abschicken </button>
+  </form>
+  </section>
+  <section class="capped-width-v-narrow padded center padded-b-0">
+    <div class="editable"><h2>Anfahrt</h2><p>Anreise ÖV:<br />Per Zug bis Cham Bahnhof, danach Bus Nr. 641 "Hünenberg, Ehret" bis zur Bushaltestelle "Hünenberg Dorf". Vorbei an der Metzgerei, Treppe runter, dann gerade aus, am Nähatelier, Veologeschäft vorbei und dann wieder gerade aus. Du findest mich direkt neben der Praxis zum Dorfgässli.<br /><br />Anreise Auto:<br /><em>von Zürich/Zug</em> her: Ausfahrt 33 Richtung Aarau, Hünenberg nehmen. Rechts halten auf Hauptstrasse 25, Richtung Aarau Sins. Dann bei Restaurant Mastro Alfonso links abbiegen Richtung Hünenberg, Die Heiligkreuzstrasse und St. Wolfgang-Strasse bis Dorfgässli in Hünenberg nehmen. Es sind genügend Besucherparkplätze vorhanden.</p><p><em>von Luzern her</em>: Ausfahrt 33 Richtung Sins, Cham nehmen. Den Kreisverkehr an der zweiten Ausfahrt auf der Sinserstrasse Richtung Aarau, Sins verlassen. Den Kreisverkehr an der ersten Ausfahrt auf der Sinserstrasse Richtung Aarau, Sins verlassen. Dann bei Restaurant Mastro Alfonso links abbiegen Richtung Hünenberg, die Heiligkreuzstrasse und St. Wolfgang-Strasse bis Dorfgässli in Hünenberg nehmen. Es sind genügend Besucherparkplätze vorhanden.</p></div>
+  </section>
+</section>
