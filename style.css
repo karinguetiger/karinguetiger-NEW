@@ -687,6 +687,12 @@ p:last-child {
   padding: 0.3rem;
 }
 
+.investition {
+  background-color: var(--dark-text);
+  color: white;
+  border-radius: 5rem;
+}
+
 .border-padded {
   padding: 0.5rem;
   border: 1px solid var(--dark-text);
