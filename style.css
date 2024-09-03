@@ -983,6 +983,11 @@ nav a:hover {
   color: rgba(0, 0, 0, 0.6)
 }
 
+.border-footer {
+  border: 2px solid var(--dark-text);
+  margin: 0.5rem;
+}
+
 footer nav a {
   font-weight: 200;
   font-size: 1rem;
