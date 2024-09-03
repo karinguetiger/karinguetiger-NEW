@@ -691,6 +691,11 @@ p:last-child {
   background-color: var(--dark-text);
   color: white;
   border-radius: 5rem;
+  padding: 5%;
+}
+
+.investition-title {
+  font-size: 2rem;
 }
 
 .border-padded {
