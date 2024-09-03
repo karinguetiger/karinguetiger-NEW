@@ -949,6 +949,11 @@ left: -0.5rem;
 
 /* ------------ Header & Hamburger Menu -------------- */
 
+.kurs-border {
+  border: 2.5px solid var(--dark-text);
+  margin: 0.5rem;
+}
+
 .pajurama-logo {
   width: 6rem;
   border-bottom: none;

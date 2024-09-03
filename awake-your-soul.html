@@ -11,6 +11,14 @@ seo:
   twitter_card:
   keywords: Coaching, Original, ThetaSoul, Karin Gütiger, Cham, Zug
   hide-from-google: false
+kurse:
+  - titel: ChakraFlow – Weibliche Energieheilung
+    untertitel: Energie & Körpersysteme – Deine 7-wöchige Reise zur weiblichen Balance
+    einleitung: In meinem 7-wöchigen Programm begleite ich dich auf einer Reise, die dich mit deiner weiblichen Energie verbindet und sowohl deine emotionale als auch körperliche Balance stärkt. Jedes Chakra steht in enger Verbindung zu deinem Körper, deinen Drüsen und Körpersystemen. Gemeinsam lösen wir Blockaden, die dich in deinem Leben bisher einschränkten, und schaffen Raum für Heilung und Erneuerung.
+    section:
+      - description_html: Unsere Reise beginnt beim Wurzelchakra, das dir Erdung und Stabilität gibt Hier stärken wir dein Sicherheitsgefühl und deine Verbindung zu den Nebennieren und deinem Becken, um mehr Vertrauen und Stabilität im Alltag zu spüren. <br><br> Im Sakralchakra, dem Zentrum deiner Kreativität und Emotionen, lösen wir alte, festgefahrene Muster und schauen uns die Ur-Verletzungen der Frauen an. Diese Arbeit fördert die Balance in deinem Fortpflanzungssystem und unterstützt deine emotionale Gesundheit. <br><br> Das Solarplexuschakra hilft dir, deinen Selbstwert und deine innere Kraft zu stärken. Durch die Verbindung zu deinem Verdauungssystem lernst du, Altes loszulassen und mehr innere Stärke zu entwickeln.
+        image: /images/neu/awake-your-soul/awake-your-soul-top.jpg
+
 ---
 
 
@@ -33,3 +41,34 @@ seo:
         <a href="/termin-buchen.html" class="button"> Kostenloses Erstgespräch</a>
     </div>
 </section>
+
+
+<section class="center capped-width padded">
+    <div class="editable">
+        <h2> Meine Kurse: </h2>
+    </div>
+</section>
+
+{% for kurs in page.kurse %}
+<section class="kurs-border">
+    <section class="capped-width padded">
+        <div class="center">
+            <h1> {{ kurs.titel }} </h1>
+            <br>
+            <h2> {{ kurs.untertitel }} </h2>
+            <br>
+            <p> {{ kurs.einleitung }} </p>
+        </div>
+        {% for section in kurs.sections %}
+        <div class="grid-spaceAround-middle flex-flip">
+            <div class="col-6 padded">
+                <img src="{{section.image}}">
+            </div>
+            <div class="col-6 padded">
+                {{section.description_html}}
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+</section>
+{% endfor %}
