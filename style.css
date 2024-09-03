@@ -309,6 +309,10 @@ section {
   margin-top: 1rem;
 }
 
+.margin-t-04 {
+  margin-top: 0.4rem;
+}
+
 .margin-b-1 {
   margin-bottom: 1rem;
 }
@@ -958,6 +962,10 @@ left: -0.5rem;
   width: 12rem;
 }
 
+.size-09 {
+  font-size: 0.9rem;
+}
+
 /* ------------ Header & Hamburger Menu -------------- */
 
 .kurs-border {
@@ -978,6 +986,8 @@ left: -0.5rem;
   bottom: 0.3rem;
   text-align: left;
 }
+
+
 
 
 .header-logo-mobile {
@@ -1030,14 +1040,19 @@ footer nav a {
   bottom: 2rem;
 }
 
-.i-d a {
-  font-weight: 300;
-  font-size: 1rem;
+.i-d {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.7rem;
+  text-align: right;
 }
 
-.i-d {
-  margin-top: 1rem;
+.i-d a {
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-bottom: 0;
 }
+
 
 .email {
   font-size: 1.2rem;
@@ -1049,6 +1064,10 @@ footer nav a {
 .tel {
   text-decoration: none;
   border-bottom: 0;
+}
+
+.fa-brands-2 {
+  color: var(--dark-text);
 }
 
 .fa-brands-2:hover {
