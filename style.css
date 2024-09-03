@@ -940,6 +940,13 @@ left: -0.5rem;
   padding: 1rem;
 }
 
+.pa5 {
+  position: absolute;
+  right: -3rem;
+  bottom: -3rem;
+  width: 12rem;
+}
+
 /* ------------ Header & Hamburger Menu -------------- */
 
 .pajurama-logo {
