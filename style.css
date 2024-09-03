@@ -133,6 +133,9 @@ section {
   min-height: 40vh;
 }
 
+.flex-flip-normal {
+  flex-flow:row-reverse wrap;
+}
 
 .margin-l-c1 {
   margin-left: 5rem;
