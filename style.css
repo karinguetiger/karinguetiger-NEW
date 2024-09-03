@@ -409,9 +409,9 @@ section {
   background-color: white;
 }
 
-.window {
-  border-radius: 2rem
-} 
+
+
+.window { border-radius: 50rem 50rem 0 0;}
 
 .index-card-img {
   border: 1px solid var(--dark-text);
