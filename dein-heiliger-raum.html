@@ -156,6 +156,8 @@ mentorings:
                     href="https://www.facebook.com/groups/deinheiligerraum"
                     target="_blank"
                     rel="noopener">https://www.facebook.com/groups/deinheiligerraum</a></p>
+        anmelden-text: Kostenloses Erstgespräch
+        anmelden: /termin-buchen.html
     -
         titel: Premium Theta Mastery
         untertitel: Selbstentfaltung durch Theta Healing®
@@ -226,6 +228,8 @@ mentorings:
                     zur persönlichen Meisterschaft? Dann kontaktiere mich noch
                     heute, um mehr über mein Mentoring-Programm zu erfahren und
                     deine persönliche Transformation zu beginnen!</p>
+        anmelden-text: Kostenloses Erstgespräch
+        anmelden: /termin-buchen.html
 ---
 <section class="padded padded-t-0 center capped-width grid-spaceAround-middle">
     <div class="col-5 relative">
@@ -297,7 +301,7 @@ mentorings:
            <p> {{ abschluss.description_html }}</p>
         {% endfor %}
         <br /><br />
-        <a href="/kontakt.html" class="button"> Jetzt anmelden </a>
+        <a href="{{ mentoring.anmelden }}" class="button"> {{ mentoring.anmelden-text }}/a>
         </div>
     </section>
 </section>

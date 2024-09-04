@@ -152,6 +152,8 @@ kurse:
                     verbunden, und durch diese Verbindungen kannst du Heilung
                     und Erneuerung auf allen Ebenen erleben. </p><p>Ich freue
                     mich, dich auf diesem Weg zu begleiten.</p>
+        anmelden-text: Kostenloses Erstgespräch
+        anmelden: /termin-buchen.html
     -
         titel: ''
         untertitel: ''
@@ -167,6 +169,8 @@ kurse:
         abschluss:
             -
                 description_html: ''
+        anmelden-text: Kostenloses Erstgespräch
+        anmelden: /termin-buchen.html
 ---
 <section class="padded padded-t-0 center capped-width grid-spaceAround-middle">
     <div class="col-5 relative">
@@ -238,7 +242,7 @@ kurse:
            <p> {{ abschluss.description_html }}</p>
         {% endfor %}
         <br /><br />
-        <a href="/kontakt.html" class="button"> Jetzt anmelden </a>
+        <a href="{{ kurs.anmelden }}" class="button"> {{ kurs.anmelden-text }}/a>
         </div>
     </section>
 </section>
