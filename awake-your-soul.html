@@ -25,6 +25,8 @@ kurse:
             Körpersystemen. Gemeinsam lösen wir Blockaden, die dich in deinem
             Leben bisher einschränkten, und schaffen Raum für Heilung und
             Erneuerung.
+        image:
+        sections-toggle: false
         sections:
             -
                 description_html: >-
@@ -161,18 +163,31 @@ kurse:
             <br />
             <h2> {{ kurs.untertitel }} </h2>
             <br />
+            {% if kurs.sections-toggle %}
             <p> {{ kurs.description_html }} </p>
+            {% endif %}
         </div>
-        {% for section in kurs.sections %}
-        <div class="grid-spaceAround-middle flex-flip padded-t-2">
-            <div class="col-6 padded">
-                <img src="{{section.image}}" class="{% if section.border %}border-padded{% endif %}{% if section.window%}window{% endif %}" />
+        {% if kurs.sections-toggle %}
+            {% for section in kurs.sections %}
+            <div class="grid-spaceAround-middle flex-flip padded-t-2">
+                <div class="col-6 padded">
+                    <img src="{{section.image}}" class="{% if section.border %}border-padded{% endif %}{% if section.window%}window{% endif %}" />
+                </div>
+                <div class="col-6 padded">
+                    {{section.description_html}}
+                </div>
             </div>
-            <div class="col-6 padded">
-                {{section.description_html}}
+            {% endfor %}
+        {% else %}
+            <div class="padded">
+                <div>
+                    <p>  {{kurs.description_html}} </p>
+                </div>
             </div>
-        </div>
-        {% endfor %}
+            <div>
+                <img src="{{ kurs.image }}">
+            </div>
+        {% endif %}
         <div class="investition center">
             <p class="investition-title"> {{ kurs.investition}} </p>
             <br />
