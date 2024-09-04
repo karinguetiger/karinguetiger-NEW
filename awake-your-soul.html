@@ -139,9 +139,10 @@ kurse:
                 border: true
                 window: false
         investition: Investition in dich - CHF 777.00 (Ratenzahlung möglich)
-        start: >-
+        start-1: >-
             Start Hünenberg: Dienstag, 1. Oktober 2024, von 9 Uhr bis ca. 11 Uhr
-            / Start online: 21. Oktober 2024, von 18.30 Uhr - ca. 20.30 Uhr
+        start-2: Start online: 21. Oktober 2024, von 18.30 Uhr - ca. 20.30 Uhr
+        start-3:
         abschluss:
             -
                 description_html: >-
@@ -165,7 +166,10 @@ kurse:
                 border: true
                 window: false
         investition: ''
-        start: ''
+        start-1: >-
+            Start Hünenberg: Dienstag, 1. Oktober 2024, von 9 Uhr bis ca. 11 Uhr
+        start-2: Start online: 21. Oktober 2024, von 18.30 Uhr - ca. 20.30 Uhr
+        start-3:
         abschluss:
             -
                 description_html: ''
@@ -299,9 +303,10 @@ theta:
                 border: true
                 window: false
         investition: Investition in dich - CHF 777.00 (Ratenzahlung möglich)
-        start: >-
+        start-1: >-
             Start Hünenberg: Dienstag, 1. Oktober 2024, von 9 Uhr bis ca. 11 Uhr
-            / Start online: 21. Oktober 2024, von 18.30 Uhr - ca. 20.30 Uhr
+        start-2: Start online: 21. Oktober 2024, von 18.30 Uhr - ca. 20.30 Uhr
+        start-3:
         abschluss:
             -
                 description_html: >-
@@ -378,7 +383,15 @@ theta:
         <div class="investition center">
             <p class="investition-title"> {{ kurs.investition}} </p>
             <br />
-            <p> {{ kurs.start }} </p>
+            {% if kurs.start-1 %}
+            <p> {{ kurs.start-1 }} </p>
+            {% endif%}
+            {% if kurs.start-2 %}
+            <p> {{ kurs.start-3 }} </p>
+            {% endif%}
+            {% if kurs.start-3 %}
+            <p> {{ kurs.start-3 }} </p>
+            {% endif%}
         </div>
         <div class="margin-t-2 center">
             {% for abschluss in kurs.abschluss %}

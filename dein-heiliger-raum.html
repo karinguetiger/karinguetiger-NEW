@@ -142,7 +142,9 @@ mentorings:
                 border: true
                 window: false
         investition: Investition in dich - CHF 3.300,00 (Ratenzahlung möglich)
-        start: 'Startdatum: Nach Vereinbarung'
+        start-1: 'Startdatum: Nach Vereinbarung'
+        start-2:
+        start-3:
         abschluss:
             -
                 description_html: >-
@@ -221,6 +223,8 @@ mentorings:
                 window: false
         investition: INVESTITION IN DICH - CHF 3'800.00
         start: 'Startdatum: Nach Vereinbarung'
+        start-2:
+        start-3:
         abschluss:
             -
                 description_html: >-
@@ -290,7 +294,15 @@ mentorings:
         <div class="investition center">
             <p class="investition-title"> {{ mentoring.investition}} </p>
             <br />
-            <p> {{ mentoring.start }} </p>
+            {% if mentoring.start-1 %}
+            <p> {{ mentoring.start-1 }} </p>
+            {% endif%}
+            {% if mentoring.start-2 %}
+            <p> {{ mentoring.start-2 }} </p>
+            {% endif%}
+            {% if mentoring.start-3 %}
+              <p> {{ mentoring.start-3 }} </p>
+            {% endif%}
         </div>
         {% endif %}
         <div class="margin-t-2 center">
