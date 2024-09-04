@@ -96,10 +96,10 @@ kurse:
                 image: /images/familienmediation/bild-2.jpg
                 border: true
                 window: false
-        investition: Investition in dich - CHF 777.00
+        investition: Investition in dich - CHF 777.00 (Ratenzahlung möglich)
         start: >-
-            Start - Dienstag, 1. Oktober 2024, von 9 Uhr bis ca. 11 Uhr
-            (Ratenzahlung möglich).
+            Start Hünenberg: Dienstag, 1. Oktober 2024, von 9 Uhr bis ca. 11 Uhr
+            / Start online: 21. Oktober 2024, von 18.30 Uhr - ca. 20.30 Uhr
         abschluss:
             -
                 description_html: >-
@@ -110,6 +110,21 @@ kurse:
                     verbunden, und durch diese Verbindungen kannst du Heilung
                     und Erneuerung auf allen Ebenen erleben. </p><p>Ich freue
                     mich, dich auf diesem Weg zu begleiten.</p>
+    -
+        titel: ''
+        untertitel: ''
+        description_html: ''
+        sections:
+            -
+                description_html: ''
+                image: ''
+                border: true
+                window: false
+        investition: ''
+        start: ''
+        abschluss:
+            -
+                description_html: ''
 ---
 <section class="padded padded-t-0 center capped-width grid-spaceAround-middle">
     <div class="col-5 relative">
@@ -151,7 +166,7 @@ kurse:
         {% for section in kurs.sections %}
         <div class="grid-spaceAround-middle flex-flip padded-t-2">
             <div class="col-6 padded">
-                <img src="{{section.image}}" class="{% if section.border %}border-padded{% endif %}{% if section.window%}window{% endif %}"/>
+                <img src="{{section.image}}" class="{% if section.border %}border-padded{% endif %}{% if section.window%}window{% endif %}" />
             </div>
             <div class="col-6 padded">
                 {{section.description_html}}
@@ -178,7 +193,7 @@ kurse:
 <section class="bg-image bg-overlay bg-footer-bottom tall-70 flex-center text-white">
     <div class="padded">
       <div class="relative center">
-          <img src="/images/neu/index/baum-footer.svg">
+          <img src="/images/neu/index/baum-footer.svg" />
       </div>
       <div class="center margin-t-2">
         <a href="/termin-buchen.html" class="button-footer"> Ich freue mich von dir zu hören. :) </a>
