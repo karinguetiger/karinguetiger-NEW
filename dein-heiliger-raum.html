@@ -252,11 +252,13 @@ mentorings:
                 <img src="{{ mentoring.image }}" class="border-padded" />
             </div>
         {% endif %}
+        {% if mentoring.investition %}
         <div class="investition center">
             <p class="investition-title"> {{ mentoring.investition}} </p>
             <br />
             <p> {{ mentoring.start }} </p>
         </div>
+        {% endif %}
         <div class="margin-t-2 center">
             {% for abschluss in mentoring.abschluss %}
            <p> {{ abschluss.description_html }}</p>
