@@ -815,7 +815,8 @@ p a:hover {
   font-family: 'Kaisei HarunoUmi', serif;
   font-weight: 200;
   font-size: 1.5rem;
-  color: var(--accent);
+  color: white;
+  background-color: var(--accent);
 }
 
 .button-footer {
@@ -874,10 +875,10 @@ p a:hover {
   font-weight: 200;
 }
 
-.button:hover {
-  color: white;
-  background-color: var(--accent);
-}
+/* .button:hover {
+  color: var(--accent);
+  background-color: white;
+} */
 
 .button-light:hover {
   color: var(--dark);
