@@ -142,10 +142,6 @@ mentorings:
                 image: /images/path-to-image.jpg
                 border: true
                 window: false
-        investition: Investition in dich - CHF 3.300,00 (Ratenzahlung möglich)
-        start-1: 'Startdatum: Nach Vereinbarung'
-        start-2:
-        start-3:
         abschluss:
             -
                 description_html: >-
@@ -222,10 +218,6 @@ mentorings:
                 image: /images/path-to-image.jpg
                 border: true
                 window: false
-        investition: INVESTITION IN DICH - CHF 3'800.00
-        start: 'Startdatum: Nach Vereinbarung'
-        start-2:
-        start-3:
         abschluss:
             -
                 description_html: >-
@@ -284,32 +276,17 @@ mentorings:
                     <p>  {{mentoring.description_html}} </p>
                 </div>
             </div>
+            <div class="margin-t-2 center">
+                {% for abschluss in mentoring.abschluss %}
+               <p> {{ abschluss.description_html }}</p>
+            {% endfor %}
+            <br /><br />
+            <a href="{{ mentoring.anmelden }}" class="button"> {{ mentoring.anmelden-text }} </a>
+            </div>
             <div class="padded">
                 <img src="{{ mentoring.image }}" class="border-padded" />
             </div>
         {% endif %}
-        {% if mentoring.investition %}
-        <div class="investition center">
-            <p class="investition-title"> {{ mentoring.investition}} </p>
-            <br />
-            {% if mentoring.start-1 %}
-            <p> {{ mentoring.start-1 }} </p>
-            {% endif%}
-            {% if mentoring.start-2 %}
-            <p> {{ mentoring.start-2 }} </p>
-            {% endif%}
-            {% if mentoring.start-3 %}
-              <p> {{ mentoring.start-3 }} </p>
-            {% endif%}
-        </div>
-        {% endif %}
-        <div class="margin-t-2 center">
-            {% for abschluss in mentoring.abschluss %}
-           <p> {{ abschluss.description_html }}</p>
-        {% endfor %}
-        <br /><br />
-        <a href="{{ mentoring.anmelden }}" class="button"> {{ mentoring.anmelden-text }} </a>
-        </div>
     </section>
 </section>
 {% endfor %}
