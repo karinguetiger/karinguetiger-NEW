@@ -22,7 +22,7 @@ design:
   light_color: '#f0e9d8'
   v-light_color: '#FFFDF8'
   featured_color: '#6495ed'
-  accent_color: '#a74a4a'
+  accent_color: '#62BCB0'
   accent_colors: '#ffffff'
 ort:
   adresse: Dorfgässli 12, 6331 Hünenberg

@@ -808,10 +808,11 @@ p a:hover {
   border-radius: 10px;
   line-height: 1;
   padding: 0.5rem 1.5rem;
-  border: 1px solid;
+  border: 1px solid var(--accent);
   font-family: 'Kaisei HarunoUmi', serif;
   font-weight: 200;
   font-size: 1.5rem;
+  color: var(--accent);
 }
 
 .button-footer {
@@ -872,7 +873,7 @@ p a:hover {
 
 .button:hover {
   color: white;
-  background-color: var(--dark-text);
+  background-color: var(--accent);
 }
 
 .button-light:hover {
