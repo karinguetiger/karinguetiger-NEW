@@ -958,7 +958,8 @@ left: -0.5rem;
 
 .kurs-border {
   border: 2.5px solid var(--dark-text);
-  margin: 0.5rem;
+  margin: auto;
+  margin-bottom: 0.5rem;
 }
 
 .pajurama-logo {

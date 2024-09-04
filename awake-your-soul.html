@@ -196,8 +196,8 @@ kurse:
 </section>
 
 {% for kurs in page.kurse %}
-<section class="kurs-border">
-    <section class="capped-width padded">
+<section class="kurs-border capped-width">
+    <section class=" padded">
         <div class="center padded padded-b-0">
             <h1> {{ kurs.titel }} </h1>
             <br />
@@ -224,8 +224,8 @@ kurse:
                     <p>  {{kurs.description_html}} </p>
                 </div>
             </div>
-            <div>
-                <img src="{{ kurs.image }}" />
+            <div class="padded">
+                <img src="{{ kurs.image }}"  class="border-padded"/>
             </div>
         {% endif %}
         <div class="investition center">
