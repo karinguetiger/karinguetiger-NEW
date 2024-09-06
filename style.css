@@ -796,6 +796,10 @@ a {
   color: white;
 }
 
+.swiper-button-next, .swiper-button-prev {
+  color: var(--dark-text);
+}
+
 p a {
   display: inline-block;
   text-decoration: none;
@@ -827,6 +831,10 @@ p a:hover {
   font-weight: 200;
   font-size: 1.5rem;
   color: var(--accent);
+}
+
+.testimonial-name {
+  font-size: 3rem;
 }
 
 .button-footer {
