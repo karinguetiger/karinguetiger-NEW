@@ -977,8 +977,14 @@ left: -0.5rem;
 .pajurama-logo {
   width: 6rem;
   border-bottom: none;
+  border: none;
+  padding: 0;
+
 }
 
+.pajurama-logo:hover {
+  background-color: transparent;
+}
 
 
 .pajurama-logo-position {
