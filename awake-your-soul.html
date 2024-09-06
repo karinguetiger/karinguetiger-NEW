@@ -337,7 +337,7 @@ theta:
                 description_html: <p>Ich freue mich auf dich.</p>
 ---
 <section class="padded padded-t-0 center capped-width grid-spaceAround-middle">
-    <div class="col-5 relative">
+    <div class="col-5_md-7_sm-8_xs-12 relative">
         <div class="border-padded">
             <img src="/images/neu/awake-your-soul/awake-your-soul-top.jpg" class="border" />
         </div>
@@ -369,10 +369,10 @@ theta:
         {% if aktuell.sections-toggle %}
             {% for section in aktuell.sections %}
             <div class="grid-spaceAround-middle flex-flip padded-t-2">
-                <div class="col-6 padded">
+                <div class="col-6_md-12 padded">
                     <img src="{{section.image}}" class="{% if section.border %}border-padded{% endif %}{% if section.window%}window{% endif %}" />
                 </div>
-                <div class="col-6 padded">
+                <div class="col-6_md-12 padded">
                     {{section.description_html}}
                 </div>
             </div>
@@ -442,10 +442,10 @@ theta:
         {% if kurs.sections-toggle %}
             {% for section in kurs.sections %}
             <div class="grid-spaceAround-middle flex-flip padded-t-2">
-                <div class="col-6 padded">
+                <div class="col-6_md-12 padded">
                     <img src="{{section.image}}" class="{% if section.border %}border-padded{% endif %}{% if section.window%}window{% endif %}" />
                 </div>
-                <div class="col-6 padded">
+                <div class="col-6_md-12 padded">
                     {{section.description_html}}
                 </div>
             </div>
@@ -512,10 +512,10 @@ theta:
         {% if theta.sections-toggle %}
             {% for section in theta.sections %}
             <div class="grid-spaceAround-middle flex-flip padded-t-2">
-                <div class="col-6 padded">
+                <div class="col-6_md-12 padded">
                     <img src="{{section.image}}" class="{% if section.border %}border-padded{% endif %}{% if section.window%}window{% endif %}" />
                 </div>
-                <div class="col-6 padded">
+                <div class="col-6_md-12 padded">
                     {{section.description_html}}
                 </div>
             </div>

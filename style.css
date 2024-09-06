@@ -979,15 +979,14 @@ left: -0.5rem;
 /* ------------ Header & Hamburger Menu -------------- */
 
 .burger-button {
-  position:fixed;
-  top: 2vh;
-  right: 4vh;
+  position: fixed;
+  top: 0.6rem;
+  right: 1rem;
   z-index: 30;
   padding: 8px;
   margin-top: 0.8rem;
   line-height: 1.7;
   cursor: pointer;
-  
 }
 
 .burger-button-index {
@@ -1721,6 +1720,13 @@ hr.short.center {
     display: none;
   }
 
+  .pa5 {
+    position: absolute;
+    right: -1rem;
+    bottom: -1rem;
+    width: 7rem;
+  }
+
   .sm-text-center {
     text-align: center;
   }
@@ -1941,7 +1947,7 @@ hr.short.center {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    max-width: 9rem;
+    max-width: 11rem;
 }
 
 .sm-margin-t-4 { margin-top: 2.5rem;}
@@ -1993,6 +1999,23 @@ hr.short.center {
 
 p, li {
   font-size: 1.1rem;
+}
+
+.header-logo {
+  width: 20rem;
+  padding: 1rem;
+}
+
+.pa5 {
+  position: absolute;
+  right: -1rem;
+  bottom: -1rem;
+  width: 7rem;
+}
+
+
+.investition-title {
+  font-size: 1.4rem;
 }
 
 }
