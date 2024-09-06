@@ -305,9 +305,6 @@ theta:
                 </div>
                 {% endif %}
             </div>
-            <div class="padded">
-                <img src="{{ kurs.image }}" class="border-padded" />
-            </div>
         {% endif %}
         <div class="investition center">
             <p class="investition-title"> {{ kurs.investition}} </p>
@@ -328,6 +325,11 @@ theta:
         {% endfor %}
         <br /><br />
         <a href="{{ kurs.anmelden }}" class="button"> {{ kurs.anmelden-text }} </a>
+        {% if kurs.sections-toggle == false %}
+        <div class="padded">
+            <img src="{{ kurs.image }}" class="border-padded" />
+        </div>
+        {% endif %}
         </div>
     </section>
 </section>
