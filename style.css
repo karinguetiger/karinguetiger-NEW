@@ -797,12 +797,21 @@ a {
 }
 
 p a {
+  display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid;
+  border-radius: 10px;
+  line-height: 1;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--accent);
+  font-family: 'Kaisei HarunoUmi', serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  color: var(--accent);
 }
 
 p a:hover {
-  color: var(--dark);
+  color: white;
+  background-color: var(--accent);
 }
 
 .button {
