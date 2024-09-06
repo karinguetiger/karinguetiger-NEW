@@ -229,7 +229,8 @@ mentorings:
 ---
 <section class="capped-width padded padded-b-0 padded-t-1 grid-spaceAround-middle">
   <div class="border-padded relative">
-    <img src="/images/neu/heiliger-raum/dein-heiliger-raum-banner.jpg" class="border" />
+    <img src="/images/neu/heiliger-raum/dein-heiliger-raum-banner.jpg" class="border hide-xs" />
+    <img src="/images/neu/heiliger-raum/dein-heiliger-raum-xs.jpg" class="border show-xs" />
   </div>
 </section>
 
@@ -276,9 +277,11 @@ mentorings:
             </div>
             <div class="margin-t-2 center">
                 {% for abschluss in mentoring.abschluss %}
+                {% if abschluss.description_html %}
                <p> {{ abschluss.description_html }}</p>
+               <br /><br />
+               {% endif %}
             {% endfor %}
-            <br /><br />
             <a href="{{ mentoring.anmelden }}" class="button"> {{ mentoring.anmelden-text }} </a>
             </div>
             <div class="padded">
