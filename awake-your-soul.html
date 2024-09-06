@@ -63,6 +63,8 @@ kurse:
             verankern.</p></li><li><p><strong>Energetische
             Wirbelsäulenaufrichtung</strong>: Für eine tiefere Verbindung zu
             deinem Körper und deiner inneren Balance.</p></li></ul>
+        anmelden-text-1: Kostenloses Erstgespräch
+        anmelden-1: /termin-buchen.html
         image: /images/neu/index/index-card-3.jpg
         sections-toggle: false
         sections:
@@ -167,6 +169,8 @@ theta:
             anwendest, um alte Muster zu durchbrechen und deine persönliche
             Entwicklung zu fördern. Jeder Kurs ist ein Schritt auf deinem Weg zu
             mehr Klarheit und innerer Stärke.</p>
+        anmelden-text: 
+        anmelden: 
         image: /images/awake-your-soul/aurora-femina.jpg
         sections-toggle: true
         sections:
@@ -275,7 +279,6 @@ theta:
             <h1> {{ kurs.titel }} </h1>
             <br />
             <h2> {{ kurs.untertitel }} </h2>
-            <br />
             {% if kurs.sections-toggle %}
             <p> {{ kurs.description_html }} </p>
             {% endif %}
@@ -296,6 +299,11 @@ theta:
                 <div>
                     <p>  {{kurs.description_html}} </p>
                 </div>
+                {% if kurs.anmelden-text-1 %}
+                <div class="center padded-t-2">
+                    <a href="{{ kurs.anmelden-1 }}" class="button"> {{ kurs.anmelden-text-1 }} </a>
+                </div>
+                {% endif %}
             </div>
             <div class="padded">
                 <img src="{{ kurs.image }}" class="border-padded" />
