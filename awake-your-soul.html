@@ -11,15 +11,15 @@ seo:
     twitter_card:
     keywords: Coaching, Original, ThetaSoul, Karin Gütiger, Cham, Zug
     hide-from-google: false
-kurse:
+aktuelle-angebote:
     -
         titel: Aktuelle Angebote
         untertitel:
         description_html: >-
             <h4><strong>online 3 Frequenzheilungen à 50 min. inkl. Nachgespräch
             für CHF 300.00 anstatt CHF 450.00</strong></h4><h4></h4><p></p>
-        anmelden-text-1: Jetzt buchen
-        anmelden-1: /termin-buchen.html
+        anmelden-text-1: 
+        anmelden-1: 
         image: /images/neu/index/index-card-3.jpg
         sections-toggle: false
         sections:
@@ -102,6 +102,7 @@ kurse:
                 description_html:
         anmelden-text: Jetzt buchen
         anmelden: /termin-buchen.html
+kurse:
     -
         titel: ChakraFlow – Weibliche Energieheilung
         untertitel: Deine 7-wöchige Reise zur weiblichen Balance
@@ -350,6 +351,79 @@ theta:
         <p> Hier findest du persönlich kreierte Kurse und Angebote sowie eine Auswahl an Theta Healing® Gruppenkursen. Beide Angebote unterstützen dich auf deinem Weg zur Heilung und Selbstverwirklichung.</p><br /><a href="/termin-buchen.html" class="button"> Kostenloses Erstgespräch</a>
     </div>
 </section>
+
+<section class="center capped-width padded padded-t-0">
+    <div class="editable">
+        <p></p>
+        <h2> Aktuelle Angebote </h2>
+    </div>
+</section>
+
+
+{% for aktuell in page.aktuelle-angebote %}
+<section class="kurs-border capped-width">
+    <section class=" padded">
+        <div class="center padded padded-b-0">
+            <h1> {{ aktuell.titel }} </h1>
+            <br />
+            <h2> {{ aktuell.untertitel }} </h2>
+            {% if aktuell.sections-toggle %}
+            <p> {{ aktuell.description_html }} </p>
+            {% endif %}
+        </div>
+        {% if aktuell.sections-toggle %}
+            {% for section in aktuell.sections %}
+            <div class="grid-spaceAround-middle flex-flip padded-t-2">
+                <div class="col-6 padded">
+                    <img src="{{section.image}}" class="{% if section.border %}border-padded{% endif %}{% if section.window%}window{% endif %}" />
+                </div>
+                <div class="col-6 padded">
+                    {{section.description_html}}
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="padded padded-b-1">
+                <div>
+                    <p>  {{aktuell.description_html}} </p>
+                </div>
+                {% if aktuell.anmelden-text-1 %}
+                <div class="center padded-t-2">
+                    <a href="{{ aktuell.anmelden-1 }}" class="button"> {{ aktuell.anmelden-text-1 }} </a>
+                </div>
+                {% endif %}
+            </div>
+        {% endif %}
+        {% if aktuell.investition %}
+        <div class="investition center">
+            <p class="investition-title"> {{ aktuell.investition}} </p>
+            <br />
+            {% if aktuell.start-1 %}
+            <p> {{ aktuell.start-1 }} </p>
+            {% endif%}
+            {% if aktuell.start-2 %}
+            <p> {{ aktuell.start-2 }} </p>
+            {% endif%}
+            {% if aktuell.start-3 %}
+            <p> {{ aktuell.start-3 }} </p>
+            {% endif%}
+        </div>
+        {% endif %}
+        <div class=" center">
+            {% for abschluss in aktuell.abschluss %}
+           <p> {{ abschluss.description_html }}</p>
+        {% endfor %}
+        <br /><br />
+        <a href="{{ aktuell.anmelden }}" class="button"> {{ aktuell.anmelden-text }} </a>
+        {% if aktuell.sections-toggle == false %}
+        <div class="padded">
+            <img src="{{ aktuell.image }}" class="border-padded" />
+        </div>
+        {% endif %}
+        </div>
+    </section>
+</section>
+{% endfor %}
 
 
 <section class="center capped-width padded padded-t-0">
