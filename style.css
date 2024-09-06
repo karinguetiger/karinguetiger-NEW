@@ -978,6 +978,114 @@ left: -0.5rem;
 
 /* ------------ Header & Hamburger Menu -------------- */
 
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 4vh;
+  z-index: 30;
+  padding: 8px;
+  margin-top: 0.8rem;
+  line-height: 1.7;
+  cursor: pointer;
+  
+}
+
+.burger-button-index {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9;
+  padding: 8px;
+  margin-top: 0.6rem;
+  line-height: 1.7;
+  cursor: pointer;
+  
+}
+/*this is where you can chand the color of the buttons*/
+
+.burger-button-index span{
+  width: 35px;
+  border: 2px solid var(--dark-text);
+  background-color: white;
+  display: block;
+  transition: 0.5s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.burger-button-index.active span{
+  border-color: var(--dark-text);
+  background-color:white;
+}
+
+.burger-button span{
+  width: 35px;
+  border: 1px solid var(--dark-text);
+  background-color: white;
+  display: block;
+  transition: 0.5s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.burger-button.active span{
+  border-color: var(--dark-text);
+  background-color:white;
+}
+
+.border { border: 1px solid var(--dark);}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: -02px;
+}
+
+.burger-bottom{
+  bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+/* make sure this has the same top as the burger button has padding*/
+.burger-button-index.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button-index.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button-index.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
 .kurs-border {
   border: 2.5px solid var(--dark-text);
   margin: auto;
@@ -1545,6 +1653,18 @@ hr.short.center {
 
 @media(max-width:48em) {
 
+  .header-logo-mobile {
+    position: absolute;
+    top: 1.9rem;
+    left: 1.5rem;
+    max-width: 10rem;
+}
+
+  .header-link { 
+    margin-top: 0;
+    padding: 1rem;
+  }
+
   .pajurama-logo-position {
     bottom: 0.5rem;
     font-size: 0.9rem;
@@ -1612,12 +1732,21 @@ hr.short.center {
     margin-bottom: 0;
   }
 
+  .sm-margin-t-4 { margin-top: 4rem;}
+
   .sm-landscape {
     padding-bottom: 66%;
   }
 
   .sm-portrait-tall {
     padding-bottom: 175%;
+  }
+
+  .mobile-menu a {
+    font-size: 1.5rem;
+  }
+  .mobile-menu p {
+    font-size: 1rem;
   }
 
   .sm-portrait {
@@ -1775,5 +1904,16 @@ hr.short.center {
   .button-light-big {
     font-size: 1.1rem;
   }
+
+
+
+  .header-logo-mobile {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    max-width: 9rem;
+}
+
+.sm-margin-t-4 { margin-top: 2.5rem;}
 
 }

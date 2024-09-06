@@ -5,6 +5,11 @@ $( document ).ready(function() {
 		$(".mobile-menu").toggleClass("active");
 	});
 
+	$(".burger-button").click(function(){
+		$(".burger-button").toggleClass("active");
+		$(".mobile-menu").toggleClass("active");
+	});
+
 });
 
 //  Image Lazy loading
