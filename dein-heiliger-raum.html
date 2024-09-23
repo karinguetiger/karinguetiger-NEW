@@ -2,6 +2,7 @@
 layout: default
 title: Dein Heiliger Raum | Mentoring
 font-awesome: true
+swiper: true
 seo:
     title: Dein Heiliger Raum | Mentoring
     description: 'Mentoring, Heilung, Missbrauch, 1:1 Chakra, '
@@ -217,6 +218,11 @@ mentorings:
                 description_html:
         anmelden-text: Kostenloses Erstgespräch
         anmelden: /termin-buchen.html
+testimonials:
+  - name: Aleksandra
+    description_html: Meine Coaching's mit Karin waren einfach transformativ! Sie ist super einfühlsam und total vertrauenswürdig. Karin hat mich die ganze Zeit über ermutigt, meine wahre Essenz zu entdecken und zu leben. Für sie gibt es keine Grenzen - jede Idee sieht sie als möglich an und unterstützt mich dabei voll und ganz. Mit ihrer sanften Art und ihrem tiefen Verständnis habe ich es geschafft, alte Blockaden zu lösen und mein authentisches Selbst zu entfalten. Karins Hingabe, Mitgefühl und Vertrauen machen sie zu einer großartigen Coach, die ich nur wärmstens empfehlen kann.
+  - name: Sabina
+    description_html: Ich schätze dich sehr als Person und Mensch und komme deshalb sehr gerne zu dir. Du bist für mich eine sehr authentische Person, die auch persönliche Fragen beantwortet und ehrlich sagt, wie etwas ist und es nicht schön redet. Auch schätze ich deine offene und sehr natürliche Art. Ich finde die Energie in deiner Praxis sehr schön, mir gefällt der Ort und es fühlt sich für mich sehr stimmig an. Darum war ich auch schon mehr als einmal bei dir. Ich fühle mich sehr wohl und geborgen und gut abgeholt von dir. Du antwortest auch sehr zeitnah auf Fragen und ich bekomme nie das Gefühl, ich sei zu viel. Alles hat Platz und ich schätze das sehr. Ich danke vielmals, haben sich unsere Wege gekreuzt.
 ---
 <section class="capped-width padded padded-b-0 padded-t-1 grid-spaceAround-middle">
   <div class="border-padded relative">
@@ -232,6 +238,40 @@ mentorings:
         <p>Dabei ist deine eigene Bereitschaft zur aktiven Mitarbeit von entscheidender Bedeutung – nur gemeinsam können wir die Schritte gehen, die tiefgreifende Veränderungen ermöglichen. Du bestimmst den Rhythmus deines Weges, doch deine bewusste Teilnahme öffnet die Türen zur Heilung und zur Rückkehr in deine Schöpferkraft.<br /></p><a href="/termin-buchen.html" class="button"> Kostenloses Erstgespräch</a>
     </div>
 </section>
+
+<section class="relative">
+    <div class="capped-width padded-2 center">
+      <h2> TESTIMONIALS </h2>
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper-testimonial">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        {% for testimonial in page.testimonials %}
+        <div class="swiper-slide">
+          <div class="padded padded-t-0 capped-width grid-middle-spaceAround center">
+              <div class="col-11 padded">
+                  <p> {{testimonial.description_html}} </p>
+              </div>
+              <div class="col-12 padded padded-t-0">
+                <h3 class="testimonial-name"> - {{ testimonial.name }} </h3>
+              </div>
+            </div>
+        </div>
+        {% endfor %}
+      </div>
+      <!-- If we need pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+    
+      <!-- If we need navigation buttons-->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>  
+    
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+    </section>
 
 <section class="center capped-width padded">
     <div class="editable">
