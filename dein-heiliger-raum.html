@@ -253,9 +253,11 @@ testimonials:
             {% endfor %}
             <a href="{{ mentoring.anmelden }}" class="button"> {{ mentoring.anmelden-text }} </a>
             </div>
+            {% if mentoring.image %}
             <div class="padded">
                 <img src="{{ mentoring.image }}" class="border-padded" />
             </div>
+            {% endif %}
         {% endif %}
     </section>
 </section>
