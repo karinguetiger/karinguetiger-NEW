@@ -625,7 +625,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 4rem;
   font-family: 'Heather Frontis', serif;
   font-weight: 200;
 }
@@ -1613,7 +1613,7 @@ hr.short.center {
     text-align: right;
   }
 
-  h1 {
+  h1, h3 {
 
     font-size: 3.5rem;
   }
@@ -1708,7 +1708,7 @@ hr.short.center {
     font-size: 0.9rem;
   }
 
-  h1 {
+  h1, h3 {
     font-size: 2.7rem;
   }
 
