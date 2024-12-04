@@ -1,0 +1,251 @@
+---
+layout: landingpage
+title: Landing Page Template
+font-awesome: true
+seo:
+    title: 
+    description: 
+    social_image:
+    twitter_card:
+    keywords: 
+    hide-from-google: false
+kurse:
+    -
+        titel: 'Awaken '
+        untertitel: Erwecke die Heilerin in Dir.
+        description_html: >-
+            <p><strong>Dauer:</strong> 8 Wochen<br /><strong>Inhalt:</strong>
+            Wöchentliche Zoomcalls, exklusiver Mitgliederbereich, unterstützende
+            Facebook-Gruppe<br /><strong>Preis:</strong> CHF 1499 / EUR
+            1600</p><p><strong>Was erwartet dich?</strong></p><p>Diese 8-wöchige
+            Ausbildung ist eine Reise zu deiner inneren Heilerin. Du wirst
+            lernen, deine Wahrnehmung zu schärfen, tiefere Verbindungen zu dir
+            selbst und der geistigen Welt herzustellen und deine eigene
+            Heilerinnenkraft zu entfalten. Gemeinsam lösen wir Blockaden, bauen
+            Vertrauen in deine Fähigkeiten auf und schaffen Raum für echte
+            Transformation.</p><p><strong>Das lernst du während der
+            Ausbildung:</strong></p><p><strong>Bewusstsein &amp;
+            Selbstwahrnehmung aktivieren</strong><br />Spüre deine innere
+            Energie und verbinde dich mit deiner Heilerin, um deinen
+            Heilungsprozess bewusst zu gestalten.</p><p><strong>Verbindung zur
+            geistigen Welt &amp; deinem Geistführer</strong><br />Lerne, die
+            Weisheit deiner spirituellen Begleiter zu empfangen und eine tiefe
+            Kommunikation mit deinem Geistführer
+            aufzubauen.</p><p><strong>Blockierende Überzeugungen erkennen &amp;
+            transformieren</strong><br />Identifiziere deine limitierenden
+            Glaubenssätze und löse sie gezielt, um Platz für Wachstum und neue
+            Möglichkeiten zu schaffen.</p><p><strong>Heilung und
+            Selbstheilung</strong><br />Erhalte Techniken, um heilende Energien
+            für dich und andere fließen zu lassen und Körper, Geist und Seele in
+            Einklang zu bringen.</p><p><strong>Manifestation deiner Wünsche und
+            Sehnsüchte</strong><br />Nutze Manifestationstechniken, um deine
+            Träume gezielt in die Realität
+            umzusetzen.</p><p><strong>Energetische Felder lesen</strong><br
+            />Entwickle die Fähigkeit, energetische Felder von Menschen und
+            Situationen wahrzunehmen und bewusst zu
+            verändern.</p><p><strong>Übungen für Leichtigkeit im
+            Alltag</strong><br />Setze praktische Tools ein, um in deinem Alltag
+            mehr Balance, Klarheit und Gelassenheit zu
+            finden.</p><p><strong>Seelenmission entdecken und leben</strong><br
+            />Finde deine tiefere Lebensaufgabe und integriere sie in deinen
+            Alltag, um deine Schöpferkraft voll auszuleben.</p><p><strong>Für
+            wen ist diese Ausbildung geeignet?</strong></p><ul><li><p>Du
+            möchtest deine Heilungsreise beginnen und/oder vertiefen und deine
+            innere Heilerin aktivieren.</p></li><li><p>Du suchst Werkzeuge, um
+            deine Energie zu transformieren und Blockaden zu
+            lösen.</p></li><li><p>Du bist bereit, dich mit deinem tiefsten Kern
+            und deiner spirituellen Kraft zu
+            verbinden.</p></li></ul><p><strong>Dein nächster
+            Schritt:</strong></p><p>Erwecke die Heilerin in dir und öffne die
+            Tür zu einem kraftvollen neuen Kapitel deines Lebens. Melde dich
+            jetzt an und werde Teil dieser transformierenden Reise.</p><p>👉
+            <strong>Plätze sind begrenzt – sichere dir deinen Platz noch
+            heute!</strong></p>
+        anmelden-text-1: Kennenlerngespräch buchen
+        anmelden-1: https://calendly.com/karinguetiger/erstgespraech
+        image: /uploads/pajuramacopyright496-1.jpg
+        sections-toggle: false
+        sections:
+            -
+                description_html: ''
+                image: ''
+                border: true
+                window: false
+        investition: 'Preis: CHF 1´499.- '
+        start-1: >-
+            Bei Interesse an einer Ratenzahlung, kontaktiere mich gerne unter
+            info@karinguetiger.ch
+        start-2: 'Start: 30. Januar 2025, 19.00 Uhr via Zoom'
+        start-3:
+        abschluss:
+            -
+                description_html: ''
+        anmelden-text: Direkt buchen
+        anmelden: https://buy.stripe.com/eVag0FaSWeyl6R2fZl
+---
+
+{% for kurs in page.kurse %}
+<section class="kurs-border capped-width">
+    <section class=" padded">
+        <div class="center padded padded-b-0">
+            <h1> {{ kurs.titel }} </h1>
+            <br />
+            <h2> {{ kurs.untertitel }} </h2>
+            {% if kurs.sections-toggle %}
+            <p> {{ kurs.description_html }} </p>
+            {% endif %}
+        </div>
+        {% if kurs.sections-toggle %}
+            {% for section in kurs.sections %}
+            <div class="grid-spaceAround-middle flex-flip padded-t-2">
+                <div class="col-6_md-12 padded">
+                    <img src="{{section.image}}" class="{% if section.border %}border-padded{% endif %}{% if section.window%}window{% endif %}" />
+                </div>
+                <div class="col-6_md-12 padded">
+                    {{section.description_html}}
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="padded">
+                <div>
+                    <p>  {{kurs.description_html}} </p>
+                </div>
+                {% if kurs.anmelden-text-1 %}
+                <div class="center padded-t-2">
+                    <a href="{{ kurs.anmelden-1 }}" class="button"> {{ kurs.anmelden-text-1 }} </a>
+                </div>
+                {% endif %}
+            </div>
+        {% endif %}
+        <div class="investition center">
+            <p class="investition-title"> {{ kurs.investition}} </p>
+            <br />
+            {% if kurs.start-1 %}
+            <p> {{ kurs.start-1 }} </p>
+            {% endif%}
+            {% if kurs.start-2 %}
+            <p> {{ kurs.start-2 }} </p>
+            {% endif%}
+            {% if kurs.start-3 %}
+            <p> {{ kurs.start-3 }} </p>
+            {% endif%}
+        </div>
+        <div class="margin-t-2 center">
+            {% for abschluss in kurs.abschluss %}
+           <p> {{ abschluss.description_html }}</p>
+        {% endfor %}
+        <br /><br />
+        <a href="{{ kurs.anmelden }}" class="button"> {{ kurs.anmelden-text }} </a>
+        {% if kurs.sections-toggle == false %}
+        <div class="padded">
+            <img src="{{ kurs.image }}" class="border-padded" />
+        </div>
+        {% endif %}
+        </div>
+    </section>
+</section>
+{% endfor %}
+
+
+
+<!-- <section class="center capped-width padded">
+    <div class="editable">
+        <h2> ThetaHealing® Seminare </h2>
+    </div>
+</section> -->
+
+
+<!----
+{% for theta in page.theta %}
+<section class="kurs-border capped-width">
+    <section class="padded">
+        <div class="center padded padded-b-0">
+            <h1> {{ theta.titel }} </h1>
+            <br />
+            <h2> {{ theta.untertitel }} </h2>
+            <br />
+            {% if theta.sections-toggle %}
+            <p> {{ theta.description_html }} </p>
+            {% endif %}
+        </div>
+        {% if theta.sections-toggle %}
+            {% for section in theta.sections %}
+            <div class="grid-spaceAround-middle flex-flip padded-t-2">
+                <div class="col-6_md-12 padded">
+                    <img src="{{section.image}}" class="{% if section.border %}border-padded{% endif %}{% if section.window%}window{% endif %}" />
+                </div>
+                <div class="col-6_md-12 padded">
+                    {{section.description_html}}
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="padded">
+                <div>
+                    <p>  {{theta.description_html}} </p>
+                </div>
+            </div>
+            <div class="padded">
+                <img src="{{ theta.image }}" class="border-padded" />
+            </div>
+        {% endif %}
+        <div class="investition center">
+            <p class="investition-title"> {{ theta.investition}} </p>
+            <br />
+            <p> {{ theta.start }} </p>
+        </div>
+        <div class="margin-t-2 center">
+            {% for abschluss in theta.abschluss %}
+           <p> {{ abschluss.description_html }}</p>
+        {% endfor %}
+        <br /><br />
+        <a href="{{ theta.anmelden }}" class="button"> {{ theta.anmelden-text }} </a>
+        </div>
+    </section>
+</section>
+{% endfor %}
+
+
+<section class="capped-width padded left">
+    <div class="editable">
+        <h2> Folgende ThetaHealing® Seminare können auf Anfrage gebucht werden. </h2><br />
+        <ul>
+            <li>
+                <p>Manifestieren &amp; Überfluss</p>
+            </li>
+            <li>
+                <p>Du &amp; die Erde</p>
+            </li>
+            <li>
+                <p>Du &amp; deine bessere Hälfte</p>
+            </li>
+            <li>
+                <p>Du &amp; dein innerer Kreis</p>
+            </li>
+            <li>
+                <p>Seelenpartner</p>
+            </li>
+            <li>
+                <p>Intuitive Anatomie</p>
+            </li>
+            <li>
+                <p>Tierseminar</p>
+            </li>
+            <li>
+                <p>Pflanzenseminar</p>
+            </li>
+            <li>
+                <p>Weltenbeziehungen</p>
+            </li>
+            <li>
+                <p>Rythm</p>
+            </li>
+            <li>
+                <p>Regenbogenkinder</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+--->
