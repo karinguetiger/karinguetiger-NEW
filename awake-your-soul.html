@@ -314,6 +314,11 @@ theta:
             <p> {{ kurs.description_html }} </p>
             {% endif %}
         </div>
+        {% if kurs.sections-toggle == false %}
+        <div class="padded center">
+            <img src="{{ kurs.image }}" class="border-padded" />
+        </div>
+        {% endif %}
         {% if kurs.sections-toggle %}
             {% for section in kurs.sections %}
             <div class="grid-spaceAround-middle flex-flip padded-t-2">
@@ -356,11 +361,6 @@ theta:
         {% endfor %}
         <br /><br />
         <a href="{{ kurs.anmelden }}" class="button"> {{ kurs.anmelden-text }} </a>
-        {% if kurs.sections-toggle == false %}
-        <div class="padded">
-            <img src="{{ kurs.image }}" class="border-padded" />
-        </div>
-        {% endif %}
         </div>
     </section>
 </section>
