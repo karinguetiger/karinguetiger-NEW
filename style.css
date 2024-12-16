@@ -1959,11 +1959,11 @@ hr.short.center {
   left: unset;
   bottom: unset;
   z-index: 4;
-  width: 7rem;
+  width: 4.6rem;
   background-color: white;
   border-radius: 100%;
   border: 1px solid var(--dark-text);
-  padding: 1rem;
+  padding: 0.6rem;
 }
 
 .pa3 {
