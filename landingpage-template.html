@@ -95,11 +95,11 @@ kurse:
             <p> {{ kurs.description_html }} </p>
             {% endif %}
         </div>
-        {% if kurs.sections-toggle == false %}
+        <!-- {% if kurs.sections-toggle == false %}
         <div class="padded center">
             <img src="{{ kurs.image }}" class="border-padded" />
         </div>
-        {% endif %}
+        {% endif %} -->
         {% if kurs.sections-toggle %}
             {% for section in kurs.sections %}
             <div class="grid-spaceAround-middle flex-flip padded-t-2">
