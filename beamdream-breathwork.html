@@ -240,7 +240,7 @@ theta:
 <section class="kurs-border capped-width">
     <section class=" padded">
         <div class="center padded padded-b-0">
-            <h1> {{ kurs.titel }} </h1>
+            <h2> {{ kurs.titel }} </h2>
             <br />
             <h2> {{ kurs.untertitel }} </h2>
             {% if kurs.sections-toggle %}
@@ -249,7 +249,7 @@ theta:
         </div>
         {% if kurs.sections-toggle == false %}
         <div class="padded center">
-            <img src="{{ kurs.image }}" class="border-padded" />
+            <img src="{{ kurs.image }}"/>
         </div>
         {% endif %}
         {% if kurs.sections-toggle %}
