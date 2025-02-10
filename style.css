@@ -618,6 +618,8 @@ h1 {
   font-size: 4.5rem;
 }
 
+.h1-bigger { font-size: 8rem;}
+
 h2 {
   font-size: 2rem;
   font-family: 'Kaisei HarunoUmi', serif;
@@ -1836,6 +1838,9 @@ hr.short.center {
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */
 
 @media(max-width:36em) {
+
+
+  .h1-bigger { font-size: 4.5rem;}
 
   .xs-padded-b-2 { padding-bottom: 2rem;}
 
