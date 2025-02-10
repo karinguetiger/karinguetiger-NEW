@@ -134,7 +134,7 @@ kurse:
             heute!</strong></p>
         anmelden-text-1: Kennenlerngespräch buchen
         anmelden-1: https://calendly.com/karinguetiger/soul-talk
-        image: /images/pajuramacopyright496-1.jpg
+        image: /images/awake-your-soul/4.jpg
         sections-toggle: false
         sections:
             -
@@ -344,11 +344,6 @@ theta:
             <p> {{ kurs.description_html }} </p>
             {% endif %}
         </div>
-        {% if kurs.sections-toggle == false %}
-        <div class="padded center">
-            <img src="{{ kurs.image }}" class="border-padded" />
-        </div>
-        {% endif %}
         {% if kurs.sections-toggle %}
             {% for section in kurs.sections %}
             <div class="grid-spaceAround-middle flex-flip padded-t-2">
@@ -392,6 +387,11 @@ theta:
         <br /><br />
         <a href="{{ kurs.anmelden }}" class="button"> {{ kurs.anmelden-text }} </a>
         </div>
+        {% if kurs.sections-toggle == false %}
+        <div class="padded center">
+            <img src="{{ kurs.image }}" class="border-padded" />
+        </div>
+        {% endif %}
     </section>
 </section>
 {% endfor %}
