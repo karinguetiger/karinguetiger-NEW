@@ -1,0 +1,206 @@
+---
+layout: landingpage
+title: GLORIA
+font-awesome: true
+seo:
+    title:
+    description:
+    social_image:
+    twitter_card:
+    keywords:
+    hide-from-google: false
+kurse:
+    -
+        titel: GLORIA
+        untertitel: Heilerin in JEANS
+        description_html: ''
+        anmelden-text-1: Buchen
+        anmelden-1: https://buy.stripe.com/dR65m18KOgGt7V628X
+        image: /uploads/pajuramacopyright479-1-1-2.jpg
+        sections-toggle: true
+        sections:
+            -
+                description_html: >-
+                    <p><strong>Dauer:</strong> 6<br /><strong>Inhalt:</strong>
+                    Wöchentliche Zoomcalls mit tiefen Herzverbindungsreisen, 2 x
+                    1:1 Call, 1 x Breathwork Session, exklusiver
+                    Mitgliederbereich, unterstützende Facebook-Gruppe<br
+                    /><strong>Preis:</strong> EUR 2222</p>
+                image: /images/pajuramacopyright4-(1).jpg
+                border: true
+                window: false
+        investition: 'Preis: EUR 29 / CHF 27'
+        start-1:
+        start-2: 'Start: 28. Mai 2025, 20 Uhr'
+        start-3:
+        abschluss:
+            -
+                description_html: ''
+        anmelden-text: Direkt buchen
+        anmelden: https://buy.stripe.com/eVag0FaSWeyl6R2fZl
+---
+{% for kurs in page.kurse %}
+<section class="kurs-border capped-width">
+    <section class=" padded">
+        <div class="center padded padded-b-0">
+            <h1 class="h1-bigger"> {{ kurs.titel }} </h1>
+            <br />
+            <h2> {{ kurs.untertitel }} </h2>
+            {% if kurs.sections-toggle %}
+            <p> {{ kurs.description_html }} </p>
+            {% endif %}
+        </div>
+        <!-- {% if kurs.sections-toggle == false %}
+        <div class="padded center">
+            <img src="{{ kurs.image }}" class="border-padded" />
+        </div>
+        {% endif %} -->
+        {% if kurs.sections-toggle %}
+            {% for section in kurs.sections %}
+            <div class="grid-spaceAround-middle flex-flip padded-t-2">
+                <div class="col-6_md-12 padded">
+                    <img src="{{section.image}}" class="{% if section.border %}border-padded{% endif %}{% if section.window%}window{% endif %}" />
+                </div>
+                <div class="col-6_md-12 padded">
+                    {{section.description_html}}
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="padded">
+                <div>
+                    <p>  {{kurs.description_html}} </p>
+                </div>
+                {% if kurs.anmelden-text-1 %}
+                <div class="center padded-t-2">
+                    <a href="{{ kurs.anmelden-1 }}" class="button"> {{ kurs.anmelden-text-1 }} </a>
+                </div>
+                {% endif %}
+            </div>
+        {% endif %}
+        <div class="investition center">
+            <p class="investition-title"> {{ kurs.investition}} </p>
+            <br />
+            {% if kurs.start-1 %}
+            <p> {{ kurs.start-1 }} </p>
+            {% endif%}
+            {% if kurs.start-2 %}
+            <p> {{ kurs.start-2 }} </p>
+            {% endif%}
+            {% if kurs.start-3 %}
+            <p> {{ kurs.start-3 }} </p>
+            {% endif%}
+        </div>
+        <div class="margin-t-2 center">
+            {% for abschluss in kurs.abschluss %}
+           <p> {{ abschluss.description_html }}</p>
+        {% endfor %}
+        <br /><br />
+        <a href="{{ kurs.anmelden }}" class="button"> {{ kurs.anmelden-text }} </a>
+        </div>
+    </section>
+</section>
+{% endfor %}
+
+
+
+<!-- <section class="center capped-width padded">
+    <div class="editable">
+        <h2> ThetaHealing® Seminare </h2>
+    </div>
+</section> -->
+
+
+<!----
+{% for theta in page.theta %}
+<section class="kurs-border capped-width">
+    <section class="padded">
+        <div class="center padded padded-b-0">
+            <h1> {{ theta.titel }} </h1>
+            <br />
+            <h2> {{ theta.untertitel }} </h2>
+            <br />
+            {% if theta.sections-toggle %}
+            <p> {{ theta.description_html }} </p>
+            {% endif %}
+        </div>
+        {% if theta.sections-toggle %}
+            {% for section in theta.sections %}
+            <div class="grid-spaceAround-middle flex-flip padded-t-2">
+                <div class="col-6_md-12 padded">
+                    <img src="{{section.image}}" class="{% if section.border %}border-padded{% endif %}{% if section.window%}window{% endif %}" />
+                </div>
+                <div class="col-6_md-12 padded">
+                    {{section.description_html}}
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="padded">
+                <div>
+                    <p>  {{theta.description_html}} </p>
+                </div>
+            </div>
+            <div class="padded">
+                <img src="{{ theta.image }}" class="border-padded" />
+            </div>
+        {% endif %}
+        <div class="investition center">
+            <p class="investition-title"> {{ theta.investition}} </p>
+            <br />
+            <p> {{ theta.start }} </p>
+        </div>
+        <div class="margin-t-2 center">
+            {% for abschluss in theta.abschluss %}
+           <p> {{ abschluss.description_html }}</p>
+        {% endfor %}
+        <br /><br />
+        <a href="{{ theta.anmelden }}" class="button"> {{ theta.anmelden-text }} </a>
+        </div>
+    </section>
+</section>
+{% endfor %}
+
+
+<section class="capped-width padded left">
+    <div class="editable">
+        <h2> Folgende ThetaHealing® Seminare können auf Anfrage gebucht werden. </h2><br />
+        <ul>
+            <li>
+                <p>Manifestieren &amp; Überfluss</p>
+            </li>
+            <li>
+                <p>Du &amp; die Erde</p>
+            </li>
+            <li>
+                <p>Du &amp; deine bessere Hälfte</p>
+            </li>
+            <li>
+                <p>Du &amp; dein innerer Kreis</p>
+            </li>
+            <li>
+                <p>Seelenpartner</p>
+            </li>
+            <li>
+                <p>Intuitive Anatomie</p>
+            </li>
+            <li>
+                <p>Tierseminar</p>
+            </li>
+            <li>
+                <p>Pflanzenseminar</p>
+            </li>
+            <li>
+                <p>Weltenbeziehungen</p>
+            </li>
+            <li>
+                <p>Rythm</p>
+            </li>
+            <li>
+                <p>Regenbogenkinder</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+--->
