@@ -782,6 +782,17 @@ a {
 }
 
 
+.kurs-border p {
+  margin-bottom: 0.4rem;
+}
+
+.kurs-border h1,
+.kurs-border h2 {
+  margin-bottom: 1rem;
+  margin-top: 1.7rem;
+}
+
+
 
 .button.hover-white:hover {
   color: white;
