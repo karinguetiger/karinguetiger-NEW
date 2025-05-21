@@ -649,16 +649,13 @@ h6 {
 p,
 li {
   line-height: 1.4;
-  margin-bottom: 0.2rem;
+  margin-bottom: 1rem;
   font-family: 'Kaisei HarunoUmi', serif;
   font-weight: 200;
   font-size: 1.3rem;
 }
 
-p:last-child,
-li:last-child {
-  margin-bottom: 1rem;
-}
+
 
 ul,
 ol {
