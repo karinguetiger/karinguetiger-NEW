@@ -793,6 +793,13 @@ a {
   margin-top: 1.7rem;
 }
 
+ul li p {
+  margin-bottom: 0;
+}
+
+.kurs-border li {
+  margin-bottom: 0.4rem;
+}
 
 
 .button.hover-white:hover {
