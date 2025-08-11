@@ -212,7 +212,7 @@ testimonials:
   </div>
 </section>
 
-<section class="padded padded-t-0 capped-width-v-narrow center">
+<section class="padded padded-t-0 capped-width-narrow center">
     <div class="editable">
         <h1> Dein Heiliger Raum </h1><br />
         <p> <strong>Willkommen auf deinem Seelenweg</strong></p>
@@ -267,9 +267,9 @@ testimonials:
 
 {% for mentoring in page.mentorings %}
 <section class="kurs-border capped-width">
-    <section class=" padded">
+    <section class=" padded padded-t-0">
         <div class="center padded padded-b-0">
-            <h1> {{ mentoring.titel }} </h1>
+            <h1 class="h1-bigger"> {{ mentoring.titel }} </h1>
             <br />
             <h2> {{ mentoring.untertitel }} </h2>
             {% if mentoring.sections-toggle %}
