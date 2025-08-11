@@ -105,3 +105,21 @@
     ml('account', '568734');
 </script>
 <!-- End MailerLite Universal -->
+
+
+<!-- Event snippet for THETAHEALING SEMINARE CONVERSION 08 2025 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11279802800/8bVxCM-RhIQbELDD0IIq',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>

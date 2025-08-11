@@ -338,7 +338,7 @@ theta:
                 </div>
                 {% if aktuell.anmelden-text-1 %}
                 <div class="center padded-t-2">
-                    <a href="{{ aktuell.anmelden-1 }}" class="button"> {{ aktuell.anmelden-text-1 }} </a>
+                    <a href="{{ aktuell.anmelden-1 }}" class="button" > {{ aktuell.anmelden-text-1 }} </a>
                 </div>
                 {% endif %}
             </div>
@@ -363,7 +363,7 @@ theta:
            <p> {{ abschluss.description_html }}</p>
         {% endfor %}
         <br /><br />
-        <a href="{{ aktuell.anmelden }}" class="button"> {{ aktuell.anmelden-text }} </a>
+        <a href="{{ aktuell.anmelden }}" class="button" > {{ aktuell.anmelden-text }} </a>
         {% if aktuell.sections-toggle == false %}
         <div class="padded">
             <img src="{{ aktuell.image }}" class="border-padded" />
@@ -405,7 +405,7 @@ theta:
                 </div>
                 {% if kurs.anmelden-text-1 %}
                 <div class="center padded-t-2">
-                    <a href="{{ kurs.anmelden-1 }}" class="button"> {{ kurs.anmelden-text-1 }} </a>
+                    <a href="{{ kurs.anmelden-1 }}" class="button" > {{ kurs.anmelden-text-1 }} </a>
                 </div>
                 {% endif %}
             </div>
@@ -428,7 +428,7 @@ theta:
            <p> {{ abschluss.description_html }}</p>
         {% endfor %}
         <br /><br />
-        <a href="{{ kurs.anmelden }}" class="button"> {{ kurs.anmelden-text }} </a>
+        <a href="{{ kurs.anmelden }}" class="button" > {{ kurs.anmelden-text }} </a>
         </div>
         {% if kurs.sections-toggle == false %}
         <div class="padded center">
@@ -552,3 +552,37 @@ theta:
       </div>
     </div>
   </section>
+
+
+<script>
+document.addEventListener('click', function(e){
+  // Nur linker Klick ohne Modifiertasten
+  if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+
+  const a = e.target.closest('a');
+  if (!a) return;
+
+  // Opt-out-Klasse
+  if (a.classList.contains('no-track')) return;
+
+  const href = a.href || '';
+  if (!href) return;
+
+  // Nicht tracken bei Mail/Tel/JS/Anker
+  if (href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:') || href.includes('#')) return;
+
+  // Neue Tabs / Downloads nicht hijacken
+  if (a.target === '_blank' || a.hasAttribute('download')) return;
+
+  e.preventDefault();
+
+  // Falls die Funktion noch nicht da ist, normal navigieren
+  if (typeof gtag_report_conversion !== 'function') {
+    window.location = href;
+    return;
+  }
+
+  gtag_report_conversion(href);
+}, { capture: true });
+</script>
+
