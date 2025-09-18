@@ -1,20 +1,27 @@
+# Alte Domains -> kanonische Domain (Apex)
 [[redirects]]
-  from = "https://www.thetasoul.ch/"
-  to = "https://karinguetiger.ch/"
+  from = "/*"
+  to = "https://karinguetiger.ch/:splat"
   status = 301
   force = true
+  conditions = { Host = ["awakensoul.ch", "www.awakensoul.ch", "thetasoul.ch", "www.thetasoul.ch"] }
+
+# WWW -> Apex (falls du strikt https://karinguetiger.ch willst)
 [[redirects]]
-  from = "https://thetasoul.ch/"
-  to = "https://karinguetiger.ch/"
+  from = "https://www.karinguetiger.ch/*"
+  to   = "https://karinguetiger.ch/:splat"
   status = 301
   force = true
+
+# HTTP -> HTTPS Absicherung
 [[redirects]]
-  from = "https://awakensoul.ch/"
-  to = "https://karinguetiger.ch/"
+  from = "http://karinguetiger.ch/*"
+  to   = "https://karinguetiger.ch/:splat"
   status = 301
   force = true
+
 [[redirects]]
-  from = "https://www.awakensoul.ch/"
-  to = "https://karinguetiger.ch/"
+  from = "http://www.karinguetiger.ch/*"
+  to   = "https://karinguetiger.ch/:splat"
   status = 301
   force = true
