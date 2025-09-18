@@ -6,7 +6,6 @@
   force = true
   conditions = { Host = ["awakensoul.ch", "www.awakensoul.ch", "thetasoul.ch", "www.thetasoul.ch"] }
 
-# WWW -> Apex (falls du strikt https://karinguetiger.ch willst)
 [[redirects]]
   from = "https://www.karinguetiger.ch/*"
   to   = "https://karinguetiger.ch/:splat"
