@@ -1856,6 +1856,11 @@ hr.short.center {
     font-size: 0.9rem;
   }
 
+  .bg-menu {
+    background-image: none;
+    background-color: white;
+  }
+
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */
