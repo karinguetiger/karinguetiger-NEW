@@ -945,13 +945,14 @@ p a:hover {
 .pa1 {
   position: absolute;
   bottom: -2rem;
-  left: 4rem;
+  right: -4rem;
   z-index: 4;
-  width: 13rem;
+  width: 9rem;
   background-color: white;
   border-radius: 100%;
   border: 1px solid var(--dark-text);
   padding: 1.5rem;
+
 }
 
 .pa2 {
@@ -1680,9 +1681,9 @@ hr.short.center {
   .pa1 {
     position: absolute;
     bottom: -2rem;
-    left: 4rem;
+    right: -4rem;
     z-index: 4;
-    width: 9rem;
+    width: 7rem;
     background-color: white;
     border-radius: 100%;
     border: 1px solid var(--dark-text);
@@ -1701,9 +1702,9 @@ hr.short.center {
   .pa1 {
     position: absolute;
     bottom: -2rem;
-    left: 4rem;
+    right: -4rem;
     z-index: 4;
-    width: 7rem;
+    width: 5rem;
     background-color: white;
     border-radius: 100%;
     border: 1px solid var(--dark-text);
