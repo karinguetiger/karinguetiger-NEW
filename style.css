@@ -1367,6 +1367,9 @@ footer nav a {
 
 .header-baum {
   width: 10rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 
@@ -1389,6 +1392,11 @@ footer nav a {
 
 .header-link {
   z-index: 21;
+}
+
+.header-link a,p {
+  display: block;
+  margin-right: 2rem;
 }
 
 .mobile-header-logo {
@@ -1697,6 +1705,17 @@ hr.short.center {
 
 
 @media(max-width:48em) {
+
+
+  .header-link a,p {
+  display: block;
+  margin-right: 0;
+  text-align: center;
+}
+
+.header-baum {
+    width: 6rem;
+}
 
 
   .pa1 {
